@@ -5,35 +5,51 @@ var program = require( 'commander' )
   , progress= require( 'progress'  )
 
 	      require( 'colors'    )
-	      require( 'string.prototype.repeat')
 
 // Utilities
-Array.prototype.clean = function(deleteValue) {
-  for (var i = 0; i < this.length; i++) {
-    if (this[i] == deleteValue) {         
-      this.splice(i, 1);
-      i--;
+
+Array.prototype.removeEmptyValues = function () {
+  for ( var i = 0; i < this.length; i++ ) {
+    if ( this[ i ] === undefined ) {
+      this.splice( i--, 1 );
     }
   }
   return this;
 };
 
+if (!String.prototype.repeat) {
+  String.prototype.repeat = function ( n ) {
+    var n = parseInt( n )
+    
+    if ( isNaN( n ) ) 
+      throw new TypeError('can\'t convert ' + this + ' to object');
+    
+    if ( n > 0 )
+      return ( new Array( n + 1 ) ).join ( this.toString() )
+  }
+}
+
+function cleanDirectoryName ( directory ) {
+  return directory.replace( /\/$/, '' )
+}
+
 program
   .version('0.0.1')
   .usage ('[options]')
   .option('-p, --project <path>',
-	  'CProject folder')
+	  'CProject folder',
+	  cleanDirectoryName)
   .option('-o, --output <path>',
 	  'where to output results ' +
           '(directory will be created if it doesn\'t exist, defaults to CProject folder',
-	  'output')
+	  cleanDirectoryName)
   .option('-c, --combine-ami <items>',
-	  'Combine AMI results of all the papers into JSON, sorted by type. '+
-	  'Specify types to combine, seperated by ",". Types are found in the title attribute in the root element of the results.xml file',
+	  'combine AMI results of all the papers into JSON, grouped by type.\n                           '+
+	  'specify types to combine, seperated by ",". Types are found in the title attribute in the root element of the results.xml file',
 	  function ( a ) { return a.split ( ',' ) },
 	  [])
   .option('-s, --save-seperately',
-	  'Save paper JSON and AMI JSON seperately. Default: false')
+	  'save paper JSON and AMI JSON seperately. Default: false')
   .option('-v, --verbosity <level>',
 	  'amount of information to log ' +
           '(debug, info, log, warn, error)',
@@ -57,7 +73,7 @@ var custom  = {
       
 	if ( name.length > 5 ) name = name.slice(0,5);
 	
-	custom.v_level[name.toUpperCase()] = level;	
+	this.v_level[name.toUpperCase()] = level;
 	this.console[name.toLowerCase()] = function () {
 	  var caller_line = custom.getErrorObject().stack.split( '\n' )[ 4 ]
 	    , index = caller_line.indexOf( 'at ' ) + 2
@@ -109,6 +125,9 @@ if ( !project ) {
 if ( !fs.existsSync( project ) ) {
   custom.console.error( 'Project directory does not exist: ' + project );
   process.exit( 1 ); }
+
+if ( !output ) {
+  output = project }
 
 // Make output directory if non-existent
 if ( !fs.existsSync( output ) ) {
@@ -184,7 +203,7 @@ function getAMIResults ( directory ) {
     // ...and return XML as JSON
     data[ fileDoc.attr.title ] = children
     
-    // If data contains genera or species...
+    // If data is of a type specified in -c flag...
     if ( AMITypes.indexOf( fileDoc.attr.title ) > -1 ) {
       
       // ...for every child...
@@ -198,7 +217,7 @@ function getAMIResults ( directory ) {
 	  , child = children[ childIndex ]
 	  , prop  = child.match || child.word
 	
-	// (if this is the first time to append a prop to type, e.g. 'Pinus' for 'genus' or any word for frequencie'', intiate it)
+	// (if this is the first time to append a prop to type, e.g. 'Pinus' for 'genus' or any word for 'frequencies', initiate it)
 	if ( obj[ prop ] === undefined )
 	  obj[ prop ] = [];
 	
@@ -226,5 +245,5 @@ try {
   
   custom.console.info( 'Saving output succeeded!' )
 } catch ( e ) {
-  custom.console.error( 'Saving output failed!', e.toString() )
+  custom.console.error( 'Saving output failed! Error:', e.toString() )
 }
