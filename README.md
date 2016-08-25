@@ -24,118 +24,121 @@ Output is JSON, in one or multiple files, depending on the flag `-s`.
 
 Structure:
 
-    // data.json
-    
+```javascript
+// data.json
+
+{
+
+  // Papers
+  "articles": [
+    ...
     {
-    
-      // Papers
-      "articles": [
+      "metadata": {
+        // JSON from eupmc_result.json
+      },
+      "AMIResults": {
+        // AMI results of this article, sorted by their type
         ...
-        {
-          "metadata": {
-            // JSON from eupmc_result.json
-          },
-          "AMIResults": {
-            // AMI results of this article, sorted by their type
-            ...
-            "binomial": [
-              // Instances of a <result> object in the corresponding <results> object
-              ...
-              {
-                // Attributes of corresponding <result> object
-              },
-              ...
-            ],
-            ...
-          }
-        },
-        ...
-      ],
-      
-      // AMI results of all articles, sorted by their type
-      ...
-      "binomial": {
-        ...
-        "Picea glauca": [
-          // Instances of a <result> object with "Picea glauca" as match attribute
+        "binomial": [
+          // Instances of a <result> object in the corresponding <results> object
           ...
           {
             // Attributes of corresponding <result> object
-            ...
-            // PubMed Central ID of the paper where the <result> object comes from
-            pmc: PMC0000000
           },
           ...
         ],
         ...
+      }
+    },
+    ...
+  ],
+  
+  // AMI results of all articles, sorted by their type
+  ...
+  "binomial": {
+    ...
+    "Picea glauca": [
+      // Instances of a <result> object with "Picea glauca" as match attribute
+      ...
+      {
+        // Attributes of corresponding <result> object
+        ...
+        // PubMed Central ID of the paper where the <result> object comes from
+        pmc: PMC0000000
       },
       ...
-    }
+    ],
+    ...
+  },
+  ...
+}
+```
 
 ### Multiple files (`-s`)
 
-    // articles.json
-    
-    [
+```javascript
+// articles.json
+
+[
+  ...
+  {
+    "metadata": {
+      // JSON from eupmc_result.json
+    },
+    "AMIResults": {
+      // AMI results of this article, sorted by their type
       ...
-      {
-        "metadata": {
-          // JSON from eupmc_result.json
-        },
-        "AMIResults": {
-          // AMI results of this article, sorted by their type
-          ...
-          "binomial": [
-            // Instances of a <result> object in the corresponding <results> object
-            ...
-            {
-              // Attributes of corresponding <result> object
-            },
-            ...
-          ],
-          ...
-        }
-      },
-      ...
-    ]
-      
-    
-    // AMI results of all articles, sorted by their type
-    
-    // binomial.json
-    
-    {
-      ...
-      "Picea glauca": [
-        // Instances of a <result> object with "Picea glauca" as match attribute
+      "binomial": [
+        // Instances of a <result> object in the corresponding <results> object
         ...
         {
           // Attributes of corresponding <result> object
-          ...
-          // PubMed Central ID of the paper where the <result> object comes from
-          pmc: PMC0000000
         },
         ...
       ],
       ...
     }
-    
-    // genus.json
-    
+  },
+  ...
+]
+
+// AMI results of all articles, sorted by their type
+
+// binomial.json
+
+{
+  ...
+  "Picea glauca": [
+    // Instances of a <result> object with "Picea glauca" as match attribute
+    ...
     {
+      // Attributes of corresponding <result> object
       ...
-      "Pinus": [
-        // Instances of a <result> object with "Pinus" as match attribute
-        ...
-        {
-          // Attributes of corresponding <result> object
-          ...
-          // PubMed Central ID of the paper where the <result> object comes from
-          pmc: PMC0000000
-        },
-        ...
-      ],
+      // PubMed Central ID of the paper where the <result> object comes from
+      pmc: PMC0000000
+    },
+    ...
+  ],
+  ...
+}
+
+// genus.json
+
+{
+  ...
+  "Pinus": [
+    // Instances of a <result> object with "Pinus" as match attribute
+    ...
+    {
+      // Attributes of corresponding <result> object
       ...
-    }
-    
-    // etc.
+      // PubMed Central ID of the paper where the <result> object comes from
+      pmc: PMC0000000
+    },
+    ...
+  ],
+  ...
+}
+
+// etc.
+```
