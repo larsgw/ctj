@@ -172,7 +172,10 @@ function getAMIResults ( directory ) {
     // ...get the file...
     var file = files[fileIndex]
       , fileDoc = new xmldoc.XmlDocument( fs.readFileSync(
-	  [ project, file.attr.name ].join('/'),
+	  /^\.\//.test( file.attr.name ) ?
+	    [ project, file.attr.name ].join('/')
+	  :
+	    [          file.attr.name ].join('/'),
 	  'utf8' ) )
       , children = fileDoc.children.map( function ( v, i ) {
 	    return v.attr;

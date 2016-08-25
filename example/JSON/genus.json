@@ -1,0 +1,119 @@
+{
+  "Picea": [
+    {
+      "pre": "Previous genetic studies from both nuclear and organellar markers within the ",
+      "exact": "Picea",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Picea",
+      "post": " group have revealed a fairly shallow phylogeny with partly contrasting results between different m",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ld combination of e-value = 1×10 −05, score = 200 and percentage of identity = 90% (for ",
+      "exact": "Picea",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Picea",
+      "post": " vs Pinus) and 80% (for Picea vs Taxus). Peptides of predicted ORFs from both ",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "sup>, score = 200 and percentage of identity = 90% (for Picea vs Pinus) and 80% (for ",
+      "exact": "Picea",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Picea",
+      "post": " vs Taxus). Peptides of predicted ORFs from both species were aligned using the program kali",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " amino acids to 50% and restricted the hits to contain less than 5 and 7 consecutive mismatches in ",
+      "exact": "Picea",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Picea",
+      "post": " vs Pinus and Picea vs Taxus, respectively. This procedure resulted in a data ",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "d the hits to contain less than 5 and 7 consecutive mismatches in Picea vs Pinus and ",
+      "exact": "Picea",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Picea",
+      "post": " vs Taxus, respectively. This procedure resulted in a data set of putative orthologues betwe",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "based on the protein alignments using revtrans [ 79]. Finally, dN/dS ratios between ",
+      "exact": "Picea",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Picea",
+      "post": " and Pinus, and Picea and Taxus were estimated using codeml from PAML v. 4.4 [",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ng revtrans [ 79]. Finally, dN/dS ratios between Picea and Pinus, and ",
+      "exact": "Picea",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Picea",
+      "post": " and Taxus were estimated using codeml from PAML v. 4.4 [ 80], with settings ",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Arabidopsis": [
+    {
+      "pre": "d synonymous divergence between pine and spruce are more similar to the values obtained within the ",
+      "exact": "Arabidopsis",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Arabidopsis",
+      "post": " and Populus lineages and since synonymous divergence seem to have a strong impact in estima",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Populus": [
+    {
+      "pre": " between pine and spruce are more similar to the values obtained within the Arabidopsis and ",
+      "exact": "Populus",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Populus",
+      "post": " lineages and since synonymous divergence seem to have a strong impact in estimates of dN/dS [ <a h",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Pinus": [
+    {
+      "pre": "50% and restricted the hits to contain less than 5 and 7 consecutive mismatches in Picea vs ",
+      "exact": "Pinus",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Pinus",
+      "post": " and Picea vs Taxus, respectively. This procedure resulted in a data set of putative ",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Taxus": [
+    {
+      "pre": "f putative orthologues between the different Picea species and either Pinus taeda or ",
+      "exact": "Taxus",
+      "xpath": "/html[1]/body[1]/div[2]/div[5]/div[5]/p[4]",
+      "match": "Taxus",
+      "post": " with all loci having E-values lower than 3 × 10 −50 and 1 × 10 −50, respecti",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "href=\"#B79\">79]. Finally, dN/dS ratios between Picea and Pinus, and Picea and ",
+      "exact": "Taxus",
+      "match": "Taxus",
+      "post": " were estimated using codeml from PAML v. 4.4 [ 80], with settings seqtype = 1, runm",
+      "name": "genus",
+      "pmc": "PMC3543189"
+    }
+  ]
+}

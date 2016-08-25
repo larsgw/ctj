@@ -1,0 +1,1102 @@
+{
+  "Picea abies": [
+    {
+      "pre": "mRNA from actively growing needles of Norway spruce ( ",
+      "exact": "Picea abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": ") was sequenced using next generation sequencing technology. In total, close to 70 million fragment",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "d at NCBI from Picea glauca and P. sitchensis, respectively. Efforts in the European ",
+      "exact": "Picea abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " (Norway spruce) have been less intensive and only some 14,000 ESTs had been deposited at NCBI by A",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "In this study we present results from deep sequencing of the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " needle transcriptome. The data was used to create a reference transcriptome, containing a extensiv",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " EST from publicly available databases, the size of the characterized part of the transcriptome in ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " now reaches the same order of magnitude as data available from North American spruce species, with",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "RNA extracted from needles of a single adult ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " tree growing outside Uppsala, Sweden (59°51’29\"N, 17°48’38\"E) was used to produce 6 different adap",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "led from ESTs at plantgdb.org [ 37] to create a more comprehensive set of PUTs from ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": ". The final assembly contained 59,556 PUTs with a N50 and a N90 size of 551 bp and 156 bp, respecti",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "55% of the assembled ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " PUTs showed similarity (blastx E-value  &amp;lt; 1 × 10 −10) to plant proteins when tra",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": ". sitchensis and 23,450 of these were similar over more than 90% of the sequence length of the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " PUT. Of the 882 transcripts longer than 1,500 bp only 57 PUTs did not show any similarity to Arabi",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ot show any similarity to Arabidopsis or other plant proteins. Taken together this left only 4,167 ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " PUTs with no or limited similarity to any plant protein sequence or any EST sequence from other sp",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "n [ 21]). A direct comparison between a set of potentially orthologous sequences in ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " and P. glauca shows that there is a large number of PUTs that likely are full-length as the",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "full-length transcripts as many transcripts annotated as full-length in either P. glauca or ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " appear to be truncated when compared to each other (Figure 2d). Approximately one fi",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "compared to each other (Figure 2d). Approximately one fifth of the 6,194 full length ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " transcripts where orthologous sequences were found in P. glauca displayed less than 5% diff",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ring them to the PFAM-A domains. A comparison of the number of different detectable domains in the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " transcriptome to the P. glauca transcriptome is consistent with shorter length of assembled",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "transcriptome to the P. glauca transcriptome is consistent with shorter length of assembled ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " transcriptome. We detected fewer domains of all types in the P. abies assembly, but the dis",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "r length of assembled P. abies transcriptome. We detected fewer domains of all types in the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " assembly, but the distributions from the two species are indeed very similar (Figure <a href=\"#F3\"",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " Length distributions of different mRNA features in the ",
+      "exact": "P. abies ",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " PUTs. a) 5’-UTR (untranslated region). b) ORFs (open reading frame). c) 3’-UTR. d) Comparison of ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ed region). b) ORFs (open reading frame). c) 3’-UTR. d) Comparison of putative full-length ORFs in ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " and P. glauca. ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " Histogram showing domain predictions from ORFs in ",
+      "exact": "P. abies ",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " and P. glauca . The proteins domain names are from the PFAM-A database. ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "By mapping short reads to the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " PUT assembly we extracted potential SNPs using samtools and the mpileup function on the mapped rea",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "tified SNPs and if we only filter on quality 20,781 potential SNPs were identified. From published ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " population genetic data set the observed transition to transversion ratio is around 1.3, which is ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " 10 gene fragments or only organelle markers. Here we combine EST data from three spruce species ( ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": ", P. glauca and P. sitchensis), a yew ( Taxus mairei) and a pine ( Pinus ta",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "er hand. This created 6 pairwise data sets with an average 4,737 ORFs aligned in each comparison ( ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " - P. taeda: 6,977, P. abies - T. mairei: 2,932, P. glauca - P. taeda: ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "2,447). Mean synonymous divergences between the three spruce species and pine and yew were 0.175 ( ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": ": 0.172 [95% confidence interval, CI = 0.1701, 0.1736], P. glauca: 0.177 [CI = 0.1752, 0.178",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "a: 0.177 [CI = 0.1752, 0.1783], P. sitchensis: 0.176 [CI = 0.1743, 0.1779]) and 0.598 ( ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": ": 0.577 [CI = 0.5711, 0.5837], P. glauca: 0.605 [CI = 0.5979, 0.6120], P. sitchensis:",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "conifer species, has a transcriptome assembly length of 30.15 Mbp, i.e. 12 Mbp longer than the the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " assembly presented here. In addition, the length of individual PUTs is on average shorter in the <",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "> assembly presented here. In addition, the length of individual PUTs is on average shorter in the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " assembly than in both P. glauca and P. taeda (Figure 1, Figure <a href",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " href=\"#F2\">2, http://www.plantgdb.org). This indicates that the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " transcriptome assembly only comprises a fraction of the total transcriptome and that a large propo",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "t previously undiscovered spruce transcripts. In theory they could also be transcripts specific to ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": ", but this seems less likely as both this data and previous studies have shown that spruce species ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "uence that, in general, show lower degree of conservation between species. In summary, even if the ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " transcriptome contains a large fraction of partial transcripts and is far from complete, the assem",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "In fact, ORF predictions identified 6,194 PUTs from ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " with properties that suggest that they are full-length transcripts. A direct comparison of these P",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " By merging population genetics sequence data sets from both unpublished and published projects in ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": ", where the data have been collected with Sanger sequencing [ 33, 47]",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "of sequence evolution in this group of plants for thousands of full-length genes. By comparing our ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " assembly to other gymnosperm species our analysis suggests that evolutionary constraints might not",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "nts. The analysis was made on count data obtained by mapping our short read library to the created ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " PUTs. ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ing the mpileup function in SAMtools [ 75] on the short read alignment file against ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " created with BWA. Since there is very limited knowledge about allele specific expression patterns ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "rocal Blast hit approach was used to infer putative 1:1 orthologues between Picea species ( ",
+      "exact": "P. abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": ", P. glauca and P. sitchensis) and Pinus taeda and Taxus mairei using b",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "Annotation file. Annotation and level of gene expression for the ",
+      "exact": "Picea abies",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea abies",
+      "post": " PUTs. Details on the meaning of the different columns can be found on Sheet1. ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Picea glauca": [
+    {
+      "pre": "oding frames and comparing not only the Norway spruce PUTs, but also PUTs from the close relatives ",
+      "exact": "Picea glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and Picea sitchensis to both Pinus taeda and Taxus mairei, we obtained estima",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "inus) genus. By April 2012 there were 313,110 and 186,637 EST sequences deposited at NCBI from ",
+      "exact": "Picea glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and P. sitchensis, respectively. Efforts in the European Picea abies (Norway spruce)",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "h American species have been collapsed into 22,472 putative unique transcripts (PUTs, unigenes) in ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and 19,828 unigenes in P. sitchensis (see Unigene assembly on NCBI). In addition, more focu",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "atic efforts have been made to obtain full-length cDNAs (FL-cDNA) in both P. sitchensis and ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and have so far lead to the identification of 27,720 (23,589 annotated as FL-cDNA) unique transcri",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "far lead to the identification of 27,720 (23,589 annotated as FL-cDNA) unique transcribed genes in ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and around 8,000 validated FL-cDNA have been characterized in P. sitchensis[ <a href=\"#B21\"",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "between conifers and angiosperms [ 26] we used the assembly together with data from ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": ", P. sitchensis, Pinus taeda and Taxus mairei to evaluate this statement with ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "n translated to protein sequences. Of the 38,419 PUTs 32,082 show a significant hit against either ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " or P. sitchensis and 23,450 of these were similar over more than 90% of the sequence length",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "her spruce species. For complete annotation of PUTs longer than 150 bp against A. thaliana, ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": ", P. sitchensis, plant proteins, PFAM databases and repeat databases see Additional file <a ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ength to the validated full-length data set from both P. sitchensis[ 21] and ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": "[ 22] suggests that a fraction of our putative full-length PUTs includes full-length",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " were enriched for short sequences compared to what was reported from the P. sitchensis and ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " (Figure 2 compared to Figure three in [ 21]). A direct comparison bet",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "1]). A direct comparison between a set of potentially orthologous sequences in P. abies and ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " shows that there is a large number of PUTs that likely are full-length as they are equally long in",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " solely composed of full-length transcripts as many transcripts annotated as full-length in either ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " or P. abies appear to be truncated when compared to each other (Figure 2d). A",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "fth of the 6,194 full length P. abies transcripts where orthologous sequences were found in ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " displayed less than 5% difference in sequence length and hence likely represents full length trans",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "mparison of the number of different detectable domains in the P. abies transcriptome to the ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " transcriptome is consistent with shorter length of assembled P. abies transcriptome. We det",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "(open reading frame). c) 3’-UTR. d) Comparison of putative full-length ORFs in P. abies and ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": ". ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " Histogram showing domain predictions from ORFs in P. abies and ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " . The proteins domain names are from the PFAM-A database. ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "s or only organelle markers. Here we combine EST data from three spruce species ( P. abies, ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and P. sitchensis), a yew ( Taxus mairei) and a pine ( Pinus taeda) to estima",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "in each comparison ( P. abies - P. taeda: 6,977, P. abies - T. mairei: 2,932, ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " - P. taeda: 7,183, P. glauca - T. mairei: 3,110, P. sitchensis - P.",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": ". taeda: 6,977, P. abies - T. mairei: 2,932, P. glauca - P. taeda: 7,183, ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " - T. mairei: 3,110, P. sitchensis - P. taeda: 5,773, P. sitchensis - <",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "d pine and yew were 0.175 ( P. abies: 0.172 [95% confidence interval, CI = 0.1701, 0.1736], ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": ": 0.177 [CI = 0.1752, 0.1783], P. sitchensis: 0.176 [CI = 0.1743, 0.1779]) and 0.598 ( P.",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "hensis: 0.176 [CI = 0.1743, 0.1779]) and 0.598 ( P. abies: 0.577 [CI = 0.5711, 0.5837], ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": ": 0.605 [CI = 0.5979, 0.6120], P. sitchensis: 0.611 [CI = 0.6028, 0.6190]), respectively. As",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "transcriptome annotation and similarity at the protein level to available plant protein sequences. ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": ", which has one of the best characterized transcriptome among conifer species, has a transcriptome ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": ", the length of individual PUTs is on average shorter in the P. abies assembly than in both ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and P. taeda (Figure 1, Figure 2, <a href=\"http://www.plantgdb.",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "milarity to other species could represent erroneously assembled PUTs, but since estimates from the ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " transcriptome suggest that as much as 11.6 Mbp of the transcriptome is still missing [ <a href=\"#B",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "re full-length transcripts. A direct comparison of these PUTs towards full-length transcripts from ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " indicate that neither ours nor the P. glauca PUT assembly contains a comprehensive set of f",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "hese PUTs towards full-length transcripts from P. glauca indicate that neither ours nor the ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " PUT assembly contains a comprehensive set of full-length transcripts and that despite millions of ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "mates were used (with values of 0.12, 0.14 and 0.15 for the internal branch, the branch leading to ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and the branch leading to P. menziesii, respectively), but lower than the pairwise estimate",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " Genbank with the key word ’FLI’ and merged with Putative Unique Transcripts (PUTs) from plantgdb. ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " sequences came from the 27,720 transcripts from the P. glauca gene catalogue [ <a href=\"#B2",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "scripts (PUTs) from plantgdb. P. glauca sequences came from the 27,720 transcripts from the ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " gene catalogue [ 22] and merged with PUT sequences from plantgdb. Sequences of P",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "pproach was used to infer putative 1:1 orthologues between Picea species ( P. abies, ",
+      "exact": "P. glauca",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea glauca",
+      "post": " and P. sitchensis) and Pinus taeda and Taxus mairei using blastn with thresho",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Picea sitchensis": [
+    {
+      "pre": "ng not only the Norway spruce PUTs, but also PUTs from the close relatives Picea glauca and ",
+      "exact": "Picea sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " to both Pinus taeda and Taxus mairei, we obtained estimates of synonymous and non-sy",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "l 2012 there were 313,110 and 186,637 EST sequences deposited at NCBI from Picea glauca and ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": ", respectively. Efforts in the European Picea abies (Norway spruce) have been less intensive",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "nto 22,472 putative unique transcripts (PUTs, unigenes) in P. glauca and 19,828 unigenes in ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " (see Unigene assembly on NCBI). In addition, more focused experimental and bioinformatic efforts h",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "xperimental and bioinformatic efforts have been made to obtain full-length cDNAs (FL-cDNA) in both ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " and P. glauca and have so far lead to the identification of 27,720 (23,589 annotated as FL-",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ranscribed genes in P. glauca and around 8,000 validated FL-cDNA have been characterized in ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": "[ 21, 22]. These data sets have been very useful for creating microar",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "nd angiosperms [ 26] we used the assembly together with data from P. glauca, ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": ", Pinus taeda and Taxus mairei to evaluate this statement with a larger and more dive",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ein sequences. Of the 38,419 PUTs 32,082 show a significant hit against either P. glauca or ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " and 23,450 of these were similar over more than 90% of the sequence length of the P. abies ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": ". For complete annotation of PUTs longer than 150 bp against A. thaliana, P. glauca, ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": ", plant proteins, PFAM databases and repeat databases see Additional file 1. ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "oth untranslated regions (UTRs) and the ORF length to the validated full-length data set from both ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": "[ 21] and P. glauca[ 22] suggests that a fraction of our putat",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "5’-UTRs, 3’-UTRs and ORFs were enriched for short sequences compared to what was reported from the ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " and P. glauca (Figure 2 compared to Figure three in [ 21]). A ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "arkers. Here we combine EST data from three spruce species ( P. abies, P. glauca and ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": "), a yew ( Taxus mairei) and a pine ( Pinus taeda) to estimate phylogenetic trees and",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "/i>: 2,932, P. glauca - P. taeda: 7,183, P. glauca - T. mairei: 3,110, ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " - P. taeda: 5,773, P. sitchensis - T. mairei: 2,447). Mean synonymous diverge",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " 7,183, P. glauca - T. mairei: 3,110, P. sitchensis - P. taeda: 5,773, ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " - T. mairei: 2,447). Mean synonymous divergences between the three spruce species and pine ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "172 [95% confidence interval, CI = 0.1701, 0.1736], P. glauca: 0.177 [CI = 0.1752, 0.1783], ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": ": 0.176 [CI = 0.1743, 0.1779]) and 0.598 ( P. abies: 0.577 [CI = 0.5711, 0.5837], P. glau",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "598 ( P. abies: 0.577 [CI = 0.5711, 0.5837], P. glauca: 0.605 [CI = 0.5979, 0.6120], ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": ": 0.611 [CI = 0.6028, 0.6190]), respectively. Assuming a divergence time between pine and spruce of",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ree of four conifer species [ 3] and the 0.19 reported from a pairwise comparison of ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " and P. taeda[ 26]. In the comparisons to yew we obtained a mean silent diver",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": ">P. menziesii, respectively), but lower than the pairwise estimate between P. taeda and ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " (0.314 (95% CI = 0.299, 0.329)) [ 26]. The deviation from the former study is likel",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ence assembly and a short read assembly of Taxus mairei[ 19]. Sequences from ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": " were downloaded from Genbank with the key word ’FLI’ and merged with Putative Unique Transcripts (",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "nfer putative 1:1 orthologues between Picea species ( P. abies, P. glauca and ",
+      "exact": "P. sitchensis",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea sitchensis",
+      "post": ") and Pinus taeda and Taxus mairei using blastn with threshold combination of e-value",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Pinus taeda": [
+    {
+      "pre": "Ts, but also PUTs from the close relatives Picea glauca and Picea sitchensis to both ",
+      "exact": "Pinus taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Pinus taeda",
+      "post": " and Taxus mairei, we obtained estimates of synonymous and non-synonymous divergence among c",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ef=\"#B26\">26] we used the assembly together with data from P. glauca, P. sitchensis, ",
+      "exact": "Pinus taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Pinus taeda",
+      "post": " and Taxus mairei to evaluate this statement with a larger and more diverse data set. By com",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "t also two other spruce transcriptome sequences created by traditional sequencing methods, to both ",
+      "exact": "Pinus taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Pinus taeda",
+      "post": " and Taxus mairei we could minimize biases that might exist in any single assembly. Furtherm",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": ". abies, P. glauca and P. sitchensis), a yew ( Taxus mairei) and a pine ( ",
+      "exact": "Pinus taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Pinus taeda",
+      "post": ") to estimate phylogenetic trees and study the rate of molecular evolution in conifers. In all five",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " gene catalogue [ 22] and merged with PUT sequences from plantgdb. Sequences of ",
+      "exact": "Pinus taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Pinus taeda",
+      "post": " consisted of PUTs from plantgdb. The phylogenetic relationship between species was inferred using ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "ues between Picea species ( P. abies, P. glauca and P. sitchensis) and ",
+      "exact": "Pinus taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Pinus taeda",
+      "post": " and Taxus mairei using blastn with threshold combination of e-value = 1×10 −05, ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "sulted in a data set of putative orthologues between the different Picea species and either ",
+      "exact": "Pinus taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Pinus taeda",
+      "post": " or Taxus with all loci having E-values lower than 3 × 10 −50 and 1 × 10 −50",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Taxus mairei": [
+    {
+      "pre": "the close relatives Picea glauca and Picea sitchensis to both Pinus taeda and ",
+      "exact": "Taxus mairei",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Taxus mairei",
+      "post": ", we obtained estimates of synonymous and non-synonymous divergence among conifer species. In addit",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "he assembly together with data from P. glauca, P. sitchensis, Pinus taeda and ",
+      "exact": "Taxus mairei",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Taxus mairei",
+      "post": " to evaluate this statement with a larger and more diverse data set. By comparing not only our, but",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " transcriptome sequences created by traditional sequencing methods, to both Pinus taeda and ",
+      "exact": "Taxus mairei",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Taxus mairei",
+      "post": " we could minimize biases that might exist in any single assembly. Furthermore, since inferring pat",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "a from three spruce species ( P. abies, P. glauca and P. sitchensis), a yew ( ",
+      "exact": "Taxus mairei",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Taxus mairei",
+      "post": ") and a pine ( Pinus taeda) to estimate phylogenetic trees and study the rate of molecular e",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": " P. abies - T. mairei: 2,932, P. glauca - P. taeda: 7,183, P. glauca - ",
+      "exact": "T. mairei",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Taxus mairei",
+      "post": ": 3,110, P. sitchensis - P. taeda: 5,773, P. sitchensis - T. mairei: 2,",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "> - T. mairei: 3,110, P. sitchensis - P. taeda: 5,773, P. sitchensis - ",
+      "exact": "T. mairei",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Taxus mairei",
+      "post": ": 2,447). Mean synonymous divergences between the three spruce species and pine and yew were 0.175 ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "g\">http://plantgdb.org[ 37], our own sequence assembly and a short read assembly of ",
+      "exact": "Taxus mairei",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Taxus mairei",
+      "post": "[ 19]. Sequences from P. sitchensis were downloaded from Genbank with the key",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "> species ( P. abies, P. glauca and P. sitchensis) and Pinus taeda and ",
+      "exact": "Taxus mairei",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Taxus mairei",
+      "post": " using blastn with threshold combination of e-value = 1×10 −05, score = 200 and percenta",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "estions concerning the method. We also want to thank Da Cheng Hao and co-authors for sharing their ",
+      "exact": "Taxus mairei",
+      "match": "Taxus mairei",
+      "post": " PUT assembly with us. The final version of the article was greatly improved due to comments from t",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Drosophila melanogaster": [
+    {
+      "pre": "a very large number of previously unknown expressed parts of the genome, were recently obtained in ",
+      "exact": "Drosophila melanogaster",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Drosophila melanogaster",
+      "post": "[ 13]. In plants, MPS has been used to investigate gene expression and alternative s",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "A. thaliana": [
+    {
+      "pre": "EST sequence from other spruce species. For complete annotation of PUTs longer than 150 bp against ",
+      "exact": "A. thaliana",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "A. thaliana",
+      "post": ", P. glauca, P. sitchensis, plant proteins, PFAM databases and repeat databases see A",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Picea taeda": [
+    {
+      "pre": "ted 6 pairwise data sets with an average 4,737 ORFs aligned in each comparison ( P. abies - ",
+      "exact": "P. taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea taeda",
+      "post": ": 6,977, P. abies - T. mairei: 2,932, P. glauca - P. taeda: 7,183, P. glauc",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "( P. abies - P. taeda: 6,977, P. abies - T. mairei: 2,932, P. glauca - ",
+      "exact": "P. taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea taeda",
+      "post": ": 7,183, P. glauca - T. mairei: 3,110, P. sitchensis - P. taeda: 5,773,",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "a - P. taeda: 7,183, P. glauca - T. mairei: 3,110, P. sitchensis - ",
+      "exact": "P. taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea taeda",
+      "post": ": 5,773, P. sitchensis - T. mairei: 2,447). Mean synonymous divergences between the t",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "idual PUTs is on average shorter in the P. abies assembly than in both P. glauca and ",
+      "exact": "P. taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea taeda",
+      "post": " (Figure 1, Figure 2, http://www.plan",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "es [ 3] and the 0.19 reported from a pairwise comparison of P. sitchensis and ",
+      "exact": "P. taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea taeda",
+      "post": "[ 26]. In the comparisons to yew we obtained a mean silent divergence around 0.6. Th",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "branch leading to P. menziesii, respectively), but lower than the pairwise estimate between ",
+      "exact": "P. taeda",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea taeda",
+      "post": " and P. sitchensis (0.314 (95% CI = 0.299, 0.329)) [ 26]. The deviation from ",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Picea menziesii": [
+    {
+      "pre": "and 0.15 for the internal branch, the branch leading to P. glauca and the branch leading to ",
+      "exact": "P. menziesii",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea menziesii",
+      "post": ", respectively), but lower than the pairwise estimate between P. taeda and P. sitchensis<",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Arabidopsis thaliana": [
+    {
+      "pre": "l file 3). Buschiazzo et al.[ 26] also estimated dN/dS between ",
+      "exact": "Arabidopsis thaliana",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Arabidopsis thaliana",
+      "post": " and Populus trichocarpa and obtained a value of 0.0924. They therefore concluded that dN/dS",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "are within the same order of magnitude, it is worth noting that the estimate they obtained between ",
+      "exact": "A. thaliana",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Arabidopsis thaliana",
+      "post": " and P. trichocarpa tends to be much lower than previous estimates from angiosperms. For exa",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "nds to be much lower than previous estimates from angiosperms. For example, in estimates comparing ",
+      "exact": "A. thaliana",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Arabidopsis thaliana",
+      "post": " and A. lyrata the mean over more than 5000 genes was 0.203 and within the poplar lineage <i",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Populus trichocarpa": [
+    {
+      "pre": "zzo et al.[ 26] also estimated dN/dS between Arabidopsis thaliana and ",
+      "exact": "Populus trichocarpa",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Populus trichocarpa",
+      "post": " and obtained a value of 0.0924. They therefore concluded that dN/dS was higher in conifers than in",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Picea trichocarpa": [
+    {
+      "pre": "er of magnitude, it is worth noting that the estimate they obtained between A. thaliana and ",
+      "exact": "P. trichocarpa",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea trichocarpa",
+      "post": " tends to be much lower than previous estimates from angiosperms. For example, in estimates compari",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    },
+    {
+      "pre": "i> and A. lyrata the mean over more than 5000 genes was 0.203 and within the poplar lineage ",
+      "exact": "P. trichocarpa",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea trichocarpa",
+      "post": " and P. tremula the mean over almost 600 genes was 0.175 [ 54, <a href=\"#B55\"",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Arabidopsis lyrata": [
+    {
+      "pre": "an previous estimates from angiosperms. For example, in estimates comparing A. thaliana and ",
+      "exact": "A. lyrata",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Arabidopsis lyrata",
+      "post": " the mean over more than 5000 genes was 0.203 and within the poplar lineage P. trichocarpa a",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Picea tremula": [
+    {
+      "pre": "e mean over more than 5000 genes was 0.203 and within the poplar lineage P. trichocarpa and ",
+      "exact": "P. tremula",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "Picea tremula",
+      "post": " the mean over almost 600 genes was 0.175 [ 54, 55]. It is also worth",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "E. coli": [
+    {
+      "pre": " transcriptome, rRNA data sets, chloroplast and mitochondrial genomes of spruce, and the genome of ",
+      "exact": "E. coli",
+      "xpath": "/html[1]/body[1]/div[3]/div[1]/p[1]",
+      "match": "E. coli",
+      "post": ". In total, less than 5% of the reads mapped against these sequence libraries. Following this we cr",
+      "name": "binomial",
+      "pmc": "PMC3543189"
+    }
+  ]
+}

@@ -1,0 +1,2690 @@
+{
+  "data": [
+    {
+      "title": "frequency",
+      "word": "data",
+      "count": "60",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "species": [
+    {
+      "title": "frequency",
+      "word": "species",
+      "count": "48",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "spruce": [
+    {
+      "title": "frequency",
+      "word": "spruce",
+      "count": "42",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "expression": [
+    {
+      "title": "frequency",
+      "word": "expression",
+      "count": "39",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "sequence": [
+    {
+      "title": "frequency",
+      "word": "sequence",
+      "count": "39",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "reads": [
+    {
+      "title": "frequency",
+      "word": "reads",
+      "count": "38",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "transcriptome": [
+    {
+      "title": "frequency",
+      "word": "transcriptome",
+      "count": "38",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "assembly": [
+    {
+      "title": "frequency",
+      "word": "assembly",
+      "count": "37",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "gene": [
+    {
+      "title": "frequency",
+      "word": "gene",
+      "count": "37",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "PUTs": [
+    {
+      "title": "frequency",
+      "word": "PUTs",
+      "count": "32",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "abies": [
+    {
+      "title": "frequency",
+      "word": "abies",
+      "count": "31",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "length": [
+    {
+      "title": "frequency",
+      "word": "length",
+      "count": "31",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "using": [
+    {
+      "title": "frequency",
+      "word": "using",
+      "count": "31",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "genes": [
+    {
+      "title": "frequency",
+      "word": "genes",
+      "count": "30",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "different": [
+    {
+      "title": "frequency",
+      "word": "different",
+      "count": "29",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "{background": [
+    {
+      "title": "frequency",
+      "word": "{background",
+      "count": "29",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "sequences": [
+    {
+      "title": "frequency",
+      "word": "sequences",
+      "count": "26",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "sequencing": [
+    {
+      "title": "frequency",
+      "word": "sequencing",
+      "count": "26",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "set": [
+    {
+      "title": "frequency",
+      "word": "set",
+      "count": "25",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "used": [
+    {
+      "title": "frequency",
+      "word": "used",
+      "count": "25",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "short": [
+    {
+      "title": "frequency",
+      "word": "short",
+      "count": "24",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "glauca": [
+    {
+      "title": "frequency",
+      "word": "glauca",
+      "count": "23",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "divergence": [
+    {
+      "title": "frequency",
+      "word": "divergence",
+      "count": "22",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "full-length": [
+    {
+      "title": "frequency",
+      "word": "full-length",
+      "count": "22",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "genome": [
+    {
+      "title": "frequency",
+      "word": "genome",
+      "count": "22",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "transcripts": [
+    {
+      "title": "frequency",
+      "word": "transcripts",
+      "count": "22",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "estimates": [
+    {
+      "title": "frequency",
+      "word": "estimates",
+      "count": "21",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "margin": [
+    {
+      "title": "frequency",
+      "word": "margin",
+      "count": "21",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Picea": [
+    {
+      "title": "frequency",
+      "word": "Picea",
+      "count": "20",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "expressed": [
+    {
+      "title": "frequency",
+      "word": "expressed",
+      "count": "20",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "obtained": [
+    {
+      "title": "frequency",
+      "word": "obtained",
+      "count": "20",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "read": [
+    {
+      "title": "frequency",
+      "word": "read",
+      "count": "20",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "{border-style": [
+    {
+      "title": "frequency",
+      "word": "{border-style",
+      "count": "20",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "novo": [
+    {
+      "title": "frequency",
+      "word": "novo",
+      "count": "18",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "number": [
+    {
+      "title": "frequency",
+      "word": "number",
+      "count": "18",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "px;}": [
+    {
+      "title": "frequency",
+      "word": "px;}",
+      "count": "18",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "synonymous": [
+    {
+      "title": "frequency",
+      "word": "synonymous",
+      "count": "18",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "#ffffff;}": [
+    {
+      "title": "frequency",
+      "word": "#ffffff;}",
+      "count": "17",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "dN/dS": [
+    {
+      "title": "frequency",
+      "word": "dN/dS",
+      "count": "17",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "available": [
+    {
+      "title": "frequency",
+      "word": "available",
+      "count": "16",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "large": [
+    {
+      "title": "frequency",
+      "word": "large",
+      "count": "16",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "BMC": [
+    {
+      "title": "frequency",
+      "word": "BMC",
+      "count": "15",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "ORFs": [
+    {
+      "title": "frequency",
+      "word": "ORFs",
+      "count": "15",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "analysis": [
+    {
+      "title": "frequency",
+      "word": "analysis",
+      "count": "15",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "compared": [
+    {
+      "title": "frequency",
+      "word": "compared",
+      "count": "15",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "conifer": [
+    {
+      "title": "frequency",
+      "word": "conifer",
+      "count": "15",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "plant": [
+    {
+      "title": "frequency",
+      "word": "plant",
+      "count": "15",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "file": [
+    {
+      "title": "frequency",
+      "word": "file",
+      "count": "14",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "pine": [
+    {
+      "title": "frequency",
+      "word": "pine",
+      "count": "14",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "quality": [
+    {
+      "title": "frequency",
+      "word": "quality",
+      "count": "14",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "stop": [
+    {
+      "title": "frequency",
+      "word": "stop",
+      "count": "14",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Biol": [
+    {
+      "title": "frequency",
+      "word": "Biol",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Mol": [
+    {
+      "title": "frequency",
+      "word": "Mol",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "RNA": [
+    {
+      "title": "frequency",
+      "word": "RNA",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "million": [
+    {
+      "title": "frequency",
+      "word": "million",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "protein": [
+    {
+      "title": "frequency",
+      "word": "protein",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "ratio": [
+    {
+      "title": "frequency",
+      "word": "ratio",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "single": [
+    {
+      "title": "frequency",
+      "word": "single",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "study": [
+    {
+      "title": "frequency",
+      "word": "study",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "substitution": [
+    {
+      "title": "frequency",
+      "word": "substitution",
+      "count": "13",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "./---": [
+    {
+      "title": "frequency",
+      "word": "./---",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "EST": [
+    {
+      "title": "frequency",
+      "word": "EST",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Genomics": [
+    {
+      "title": "frequency",
+      "word": "Genomics",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "high": [
+    {
+      "title": "frequency",
+      "word": "high",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "lower": [
+    {
+      "title": "frequency",
+      "word": "lower",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "putative": [
+    {
+      "title": "frequency",
+      "word": "putative",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "species,": [
+    {
+      "title": "frequency",
+      "word": "species,",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "species.": [
+    {
+      "title": "frequency",
+      "word": "species.",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "time": [
+    {
+      "title": "frequency",
+      "word": "time",
+      "count": "12",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Evol": [
+    {
+      "title": "frequency",
+      "word": "Evol",
+      "count": "11",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Pinus": [
+    {
+      "title": "frequency",
+      "word": "Pinus",
+      "count": "11",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "assembled": [
+    {
+      "title": "frequency",
+      "word": "assembled",
+      "count": "11",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "collected": [
+    {
+      "title": "frequency",
+      "word": "collected",
+      "count": "11",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "longer": [
+    {
+      "title": "frequency",
+      "word": "longer",
+      "count": "11",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "mapping": [
+    {
+      "title": "frequency",
+      "word": "mapping",
+      "count": "11",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "values": [
+    {
+      "title": "frequency",
+      "word": "values",
+      "count": "11",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "ORF": [
+    {
+      "title": "frequency",
+      "word": "ORF",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Plant": [
+    {
+      "title": "frequency",
+      "word": "Plant",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "SNPs": [
+    {
+      "title": "frequency",
+      "word": "SNPs",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Taxus": [
+    {
+      "title": "frequency",
+      "word": "Taxus",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "angiosperms": [
+    {
+      "title": "frequency",
+      "word": "angiosperms",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "codon": [
+    {
+      "title": "frequency",
+      "word": "codon",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "evolution": [
+    {
+      "title": "frequency",
+      "word": "evolution",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "generation": [
+    {
+      "title": "frequency",
+      "word": "generation",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "identified": [
+    {
+      "title": "frequency",
+      "word": "identified",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "libraries": [
+    {
+      "title": "frequency",
+      "word": "libraries",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "likely": [
+    {
+      "title": "frequency",
+      "word": "likely",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "rate": [
+    {
+      "title": "frequency",
+      "word": "rate",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "rates": [
+    {
+      "title": "frequency",
+      "word": "rates",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "selection": [
+    {
+      "title": "frequency",
+      "word": "selection",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "selective": [
+    {
+      "title": "frequency",
+      "word": "selective",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "sitchensis": [
+    {
+      "title": "frequency",
+      "word": "sitchensis",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "size": [
+    {
+      "title": "frequency",
+      "word": "size",
+      "count": "10",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "(Figure": [
+    {
+      "title": "frequency",
+      "word": "(Figure",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Arabidopsis": [
+    {
+      "title": "frequency",
+      "word": "Arabidopsis",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Norway": [
+    {
+      "title": "frequency",
+      "word": "Norway",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "based": [
+    {
+      "title": "frequency",
+      "word": "based",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "close": [
+    {
+      "title": "frequency",
+      "word": "close",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "created": [
+    {
+      "title": "frequency",
+      "word": "created",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "evolutionary": [
+    {
+      "title": "frequency",
+      "word": "evolutionary",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "mRNA": [
+    {
+      "title": "frequency",
+      "word": "mRNA",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "observed": [
+    {
+      "title": "frequency",
+      "word": "observed",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "patterns": [
+    {
+      "title": "frequency",
+      "word": "patterns",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "reference": [
+    {
+      "title": "frequency",
+      "word": "reference",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "similarity": [
+    {
+      "title": "frequency",
+      "word": "similarity",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "studies": [
+    {
+      "title": "frequency",
+      "word": "studies",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "taeda": [
+    {
+      "title": "frequency",
+      "word": "taeda",
+      "count": "9",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "DNA": [
+    {
+      "title": "frequency",
+      "word": "DNA",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Figure": [
+    {
+      "title": "frequency",
+      "word": "Figure",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Ritland": [
+    {
+      "title": "frequency",
+      "word": "Ritland",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Sanger": [
+    {
+      "title": "frequency",
+      "word": "Sanger",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "alignment": [
+    {
+      "title": "frequency",
+      "word": "alignment",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "allele": [
+    {
+      "title": "frequency",
+      "word": "allele",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "cDNA": [
+    {
+      "title": "frequency",
+      "word": "cDNA",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "comparison": [
+    {
+      "title": "frequency",
+      "word": "comparison",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "coverage": [
+    {
+      "title": "frequency",
+      "word": "coverage",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "criteria": [
+    {
+      "title": "frequency",
+      "word": "criteria",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "differences": [
+    {
+      "title": "frequency",
+      "word": "differences",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "estimated": [
+    {
+      "title": "frequency",
+      "word": "estimated",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "extraction": [
+    {
+      "title": "frequency",
+      "word": "extraction",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "individual": [
+    {
+      "title": "frequency",
+      "word": "individual",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "level": [
+    {
+      "title": "frequency",
+      "word": "level",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "library": [
+    {
+      "title": "frequency",
+      "word": "library",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "mean": [
+    {
+      "title": "frequency",
+      "word": "mean",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "nucleotide": [
+    {
+      "title": "frequency",
+      "word": "nucleotide",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "predictions": [
+    {
+      "title": "frequency",
+      "word": "predictions",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "px;": [
+    {
+      "title": "frequency",
+      "word": "px;",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "reported": [
+    {
+      "title": "frequency",
+      "word": "reported",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "samples": [
+    {
+      "title": "frequency",
+      "word": "samples",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "sequenced": [
+    {
+      "title": "frequency",
+      "word": "sequenced",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "sets": [
+    {
+      "title": "frequency",
+      "word": "sets",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "similar": [
+    {
+      "title": "frequency",
+      "word": "similar",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "start": [
+    {
+      "title": "frequency",
+      "word": "start",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "total": [
+    {
+      "title": "frequency",
+      "word": "total",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "{font-family": [
+    {
+      "title": "frequency",
+      "word": "{font-family",
+      "count": "8",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Additional": [
+    {
+      "title": "frequency",
+      "word": "Additional",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Chen": [
+    {
+      "title": "frequency",
+      "word": "Chen",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Illumina": [
+    {
+      "title": "frequency",
+      "word": "Illumina",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Res": [
+    {
+      "title": "frequency",
+      "word": "Res",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "correlation": [
+    {
+      "title": "frequency",
+      "word": "correlation",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "dark": [
+    {
+      "title": "frequency",
+      "word": "dark",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "difference": [
+    {
+      "title": "frequency",
+      "word": "difference",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "estimate": [
+    {
+      "title": "frequency",
+      "word": "estimate",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "font-size": [
+    {
+      "title": "frequency",
+      "word": "font-size",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "fragments": [
+    {
+      "title": "frequency",
+      "word": "fragments",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "genetic": [
+    {
+      "title": "frequency",
+      "word": "genetic",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "gymnosperm": [
+    {
+      "title": "frequency",
+      "word": "gymnosperm",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "higher": [
+    {
+      "title": "frequency",
+      "word": "higher",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "identification": [
+    {
+      "title": "frequency",
+      "word": "identification",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "markers": [
+    {
+      "title": "frequency",
+      "word": "markers",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "molecular": [
+    {
+      "title": "frequency",
+      "word": "molecular",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "orthologous": [
+    {
+      "title": "frequency",
+      "word": "orthologous",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "pair-end": [
+    {
+      "title": "frequency",
+      "word": "pair-end",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "represent": [
+    {
+      "title": "frequency",
+      "word": "represent",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "showed": [
+    {
+      "title": "frequency",
+      "word": "showed",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "showing": [
+    {
+      "title": "frequency",
+      "word": "showing",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "specific": [
+    {
+      "title": "frequency",
+      "word": "specific",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "tree": [
+    {
+      "title": "frequency",
+      "word": "tree",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "trees": [
+    {
+      "title": "frequency",
+      "word": "trees",
+      "count": "7",
+      "pmc": "PMC3543189"
+    }
+  ],
+  ". × ": [
+    {
+      "title": "frequency",
+      "word": ". × ",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "ESTs": [
+    {
+      "title": "frequency",
+      "word": "ESTs",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Genet": [
+    {
+      "title": "frequency",
+      "word": "Genet",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Science": [
+    {
+      "title": "frequency",
+      "word": "Science",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Wang": [
+    {
+      "title": "frequency",
+      "word": "Wang",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Yang": [
+    {
+      "title": "frequency",
+      "word": "Yang",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Zhang": [
+    {
+      "title": "frequency",
+      "word": "Zhang",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "coding": [
+    {
+      "title": "frequency",
+      "word": "coding",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "comparing": [
+    {
+      "title": "frequency",
+      "word": "comparing",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "comparisons": [
+    {
+      "title": "frequency",
+      "word": "comparisons",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "conifers": [
+    {
+      "title": "frequency",
+      "word": "conifers",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "development": [
+    {
+      "title": "frequency",
+      "word": "development",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "double;": [
+    {
+      "title": "frequency",
+      "word": "double;",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "gymnosperms": [
+    {
+      "title": "frequency",
+      "word": "gymnosperms",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "human": [
+    {
+      "title": "frequency",
+      "word": "human",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "identify": [
+    {
+      "title": "frequency",
+      "word": "identify",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "lack": [
+    {
+      "title": "frequency",
+      "word": "lack",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "larger": [
+    {
+      "title": "frequency",
+      "word": "larger",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "lineage": [
+    {
+      "title": "frequency",
+      "word": "lineage",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "millions": [
+    {
+      "title": "frequency",
+      "word": "millions",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "pattern": [
+    {
+      "title": "frequency",
+      "word": "pattern",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "phylogenetic": [
+    {
+      "title": "frequency",
+      "word": "phylogenetic",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "present": [
+    {
+      "title": "frequency",
+      "word": "present",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "proteins": [
+    {
+      "title": "frequency",
+      "word": "proteins",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "recent": [
+    {
+      "title": "frequency",
+      "word": "recent",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "results": [
+    {
+      "title": "frequency",
+      "word": "results",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "retained": [
+    {
+      "title": "frequency",
+      "word": "retained",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "reveals": [
+    {
+      "title": "frequency",
+      "word": "reveals",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "thaliana": [
+    {
+      "title": "frequency",
+      "word": "thaliana",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "transcriptomes": [
+    {
+      "title": "frequency",
+      "word": "transcriptomes",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "unique": [
+    {
+      "title": "frequency",
+      "word": "unique",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "years": [
+    {
+      "title": "frequency",
+      "word": "years",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "yew": [
+    {
+      "title": "frequency",
+      "word": "yew",
+      "count": "6",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Bohlmann": [
+    {
+      "title": "frequency",
+      "word": "Bohlmann",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Buschiazzo": [
+    {
+      "title": "frequency",
+      "word": "Buschiazzo",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "First,": [
+    {
+      "title": "frequency",
+      "word": "First,",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Genome": [
+    {
+      "title": "frequency",
+      "word": "Genome",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Liu": [
+    {
+      "title": "frequency",
+      "word": "Liu",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "[CI": [
+    {
+      "title": "frequency",
+      "word": "[CI",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "adaptor": [
+    {
+      "title": "frequency",
+      "word": "adaptor",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "addition,": [
+    {
+      "title": "frequency",
+      "word": "addition,",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "aligned": [
+    {
+      "title": "frequency",
+      "word": "aligned",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "angiosperm": [
+    {
+      "title": "frequency",
+      "word": "angiosperm",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "average": [
+    {
+      "title": "frequency",
+      "word": "average",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "border-color": [
+    {
+      "title": "frequency",
+      "word": "border-color",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "border-width": [
+    {
+      "title": "frequency",
+      "word": "border-width",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "bp.": [
+    {
+      "title": "frequency",
+      "word": "bp.",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "characterization": [
+    {
+      "title": "frequency",
+      "word": "characterization",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "constraints": [
+    {
+      "title": "frequency",
+      "word": "constraints",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "data.": [
+    {
+      "title": "frequency",
+      "word": "data.",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "differentially": [
+    {
+      "title": "frequency",
+      "word": "differentially",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "distributions": [
+    {
+      "title": "frequency",
+      "word": "distributions",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "example,": [
+    {
+      "title": "frequency",
+      "word": "example,",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "fragment": [
+    {
+      "title": "frequency",
+      "word": "fragment",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "frames": [
+    {
+      "title": "frequency",
+      "word": "frames",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "frequency": [
+    {
+      "title": "frequency",
+      "word": "frequency",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "group": [
+    {
+      "title": "frequency",
+      "word": "group",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "growing": [
+    {
+      "title": "frequency",
+      "word": "growing",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "including": [
+    {
+      "title": "frequency",
+      "word": "including",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "largely": [
+    {
+      "title": "frequency",
+      "word": "largely",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "light": [
+    {
+      "title": "frequency",
+      "word": "light",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "limited": [
+    {
+      "title": "frequency",
+      "word": "limited",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "low": [
+    {
+      "title": "frequency",
+      "word": "low",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "model": [
+    {
+      "title": "frequency",
+      "word": "model",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "needle": [
+    {
+      "title": "frequency",
+      "word": "needle",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "needles": [
+    {
+      "title": "frequency",
+      "word": "needles",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "order": [
+    {
+      "title": "frequency",
+      "word": "order",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "pairwise": [
+    {
+      "title": "frequency",
+      "word": "pairwise",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "parallel": [
+    {
+      "title": "frequency",
+      "word": "parallel",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "performed": [
+    {
+      "title": "frequency",
+      "word": "performed",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "phylogeny": [
+    {
+      "title": "frequency",
+      "word": "phylogeny",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "plants": [
+    {
+      "title": "frequency",
+      "word": "plants",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "polymorphic": [
+    {
+      "title": "frequency",
+      "word": "polymorphic",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "population": [
+    {
+      "title": "frequency",
+      "word": "population",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "posterior": [
+    {
+      "title": "frequency",
+      "word": "posterior",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "previous": [
+    {
+      "title": "frequency",
+      "word": "previous",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "program": [
+    {
+      "title": "frequency",
+      "word": "program",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "properties": [
+    {
+      "title": "frequency",
+      "word": "properties",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "ratios": [
+    {
+      "title": "frequency",
+      "word": "ratios",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "relationship": [
+    {
+      "title": "frequency",
+      "word": "relationship",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "respectively.": [
+    {
+      "title": "frequency",
+      "word": "respectively.",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "revealed": [
+    {
+      "title": "frequency",
+      "word": "revealed",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "shorter": [
+    {
+      "title": "frequency",
+      "word": "shorter",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "significant": [
+    {
+      "title": "frequency",
+      "word": "significant",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "sites": [
+    {
+      "title": "frequency",
+      "word": "sites",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "solid;": [
+    {
+      "title": "frequency",
+      "word": "solid;",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "suggest": [
+    {
+      "title": "frequency",
+      "word": "suggest",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "transcripts.": [
+    {
+      "title": "frequency",
+      "word": "transcripts.",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "{font-style": [
+    {
+      "title": "frequency",
+      "word": "{font-style",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "{font-weight": [
+    {
+      "title": "frequency",
+      "word": "{font-weight",
+      "count": "5",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "(Table": [
+    {
+      "title": "frequency",
+      "word": "(Table",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "(for": [
+    {
+      "title": "frequency",
+      "word": "(for",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "./gr..": [
+    {
+      "title": "frequency",
+      "word": "./gr..",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  ".],": [
+    {
+      "title": "frequency",
+      "word": ".],",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Bioinformatics": [
+    {
+      "title": "frequency",
+      "word": "Bioinformatics",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Fox": [
+    {
+      "title": "frequency",
+      "word": "Fox",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Furthermore,": [
+    {
+      "title": "frequency",
+      "word": "Furthermore,",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Gene": [
+    {
+      "title": "frequency",
+      "word": "Gene",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Genetics": [
+    {
+      "title": "frequency",
+      "word": "Genetics",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "However,": [
+    {
+      "title": "frequency",
+      "word": "However,",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Källman": [
+    {
+      "title": "frequency",
+      "word": "Källman",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Lascoux": [
+    {
+      "title": "frequency",
+      "word": "Lascoux",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "MPS": [
+    {
+      "title": "frequency",
+      "word": "MPS",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Nat": [
+    {
+      "title": "frequency",
+      "word": "Nat",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "New": [
+    {
+      "title": "frequency",
+      "word": "New",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "PUTs.": [
+    {
+      "title": "frequency",
+      "word": "PUTs.",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Physiol": [
+    {
+      "title": "frequency",
+      "word": "Physiol",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Populus": [
+    {
+      "title": "frequency",
+      "word": "Populus",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "Second,": [
+    {
+      "title": "frequency",
+      "word": "Second,",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "abies,": [
+    {
+      "title": "frequency",
+      "word": "abies,",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "amino": [
+    {
+      "title": "frequency",
+      "word": "amino",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "analyses": [
+    {
+      "title": "frequency",
+      "word": "analyses",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "angiosperms.": [
+    {
+      "title": "frequency",
+      "word": "angiosperms.",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "annotated": [
+    {
+      "title": "frequency",
+      "word": "annotated",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "annual": [
+    {
+      "title": "frequency",
+      "word": "annual",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "assemblers": [
+    {
+      "title": "frequency",
+      "word": "assemblers",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "assemblies": [
+    {
+      "title": "frequency",
+      "word": "assemblies",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "assigned": [
+    {
+      "title": "frequency",
+      "word": "assigned",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "bold": [
+    {
+      "title": "frequency",
+      "word": "bold",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "characterized": [
+    {
+      "title": "frequency",
+      "word": "characterized",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "containing": [
+    {
+      "title": "frequency",
+      "word": "containing",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "contigs": [
+    {
+      "title": "frequency",
+      "word": "contigs",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "courier;": [
+    {
+      "title": "frequency",
+      "word": "courier;",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "create": [
+    {
+      "title": "frequency",
+      "word": "create",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "database": [
+    {
+      "title": "frequency",
+      "word": "database",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "depth": [
+    {
+      "title": "frequency",
+      "word": "depth",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "detected": [
+    {
+      "title": "frequency",
+      "word": "detected",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "differential": [
+    {
+      "title": "frequency",
+      "word": "differential",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "em;": [
+    {
+      "title": "frequency",
+      "word": "em;",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "ends": [
+    {
+      "title": "frequency",
+      "word": "ends",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "expression.": [
+    {
+      "title": "frequency",
+      "word": "expression.",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "fact": [
+    {
+      "title": "frequency",
+      "word": "fact",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "far": [
+    {
+      "title": "frequency",
+      "word": "far",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "final": [
+    {
+      "title": "frequency",
+      "word": "final",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "following": [
+    {
+      "title": "frequency",
+      "word": "following",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "fraction": [
+    {
+      "title": "frequency",
+      "word": "fraction",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "function": [
+    {
+      "title": "frequency",
+      "word": "function",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "general": [
+    {
+      "title": "frequency",
+      "word": "general",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "given": [
+    {
+      "title": "frequency",
+      "word": "given",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "history": [
+    {
+      "title": "frequency",
+      "word": "history",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "hit": [
+    {
+      "title": "frequency",
+      "word": "hit",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "inference": [
+    {
+      "title": "frequency",
+      "word": "inference",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "inferred": [
+    {
+      "title": "frequency",
+      "word": "inferred",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "information": [
+    {
+      "title": "frequency",
+      "word": "information",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "levels": [
+    {
+      "title": "frequency",
+      "word": "levels",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "long": [
+    {
+      "title": "frequency",
+      "word": "long",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "mairei": [
+    {
+      "title": "frequency",
+      "word": "mairei",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "majority": [
+    {
+      "title": "frequency",
+      "word": "majority",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "making": [
+    {
+      "title": "frequency",
+      "word": "making",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "mapped": [
+    {
+      "title": "frequency",
+      "word": "mapped",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "merged": [
+    {
+      "title": "frequency",
+      "word": "merged",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "method": [
+    {
+      "title": "frequency",
+      "word": "method",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "microarray": [
+    {
+      "title": "frequency",
+      "word": "microarray",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "non-synonymous": [
+    {
+      "title": "frequency",
+      "word": "non-synonymous",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "partial": [
+    {
+      "title": "frequency",
+      "word": "partial",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "parts": [
+    {
+      "title": "frequency",
+      "word": "parts",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "positive": [
+    {
+      "title": "frequency",
+      "word": "positive",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "possible": [
+    {
+      "title": "frequency",
+      "word": "possible",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "potential": [
+    {
+      "title": "frequency",
+      "word": "potential",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "previously": [
+    {
+      "title": "frequency",
+      "word": "previously",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "pt;}": [
+    {
+      "title": "frequency",
+      "word": "pt;}",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "reads,": [
+    {
+      "title": "frequency",
+      "word": "reads,",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "regions": [
+    {
+      "title": "frequency",
+      "word": "regions",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "related": [
+    {
+      "title": "frequency",
+      "word": "related",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "removed": [
+    {
+      "title": "frequency",
+      "word": "removed",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "restricted": [
+    {
+      "title": "frequency",
+      "word": "restricted",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "sequences.": [
+    {
+      "title": "frequency",
+      "word": "sequences.",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "single-end": [
+    {
+      "title": "frequency",
+      "word": "single-end",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "suggests": [
+    {
+      "title": "frequency",
+      "word": "suggests",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "tissue": [
+    {
+      "title": "frequency",
+      "word": "tissue",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "tissues": [
+    {
+      "title": "frequency",
+      "word": "tissues",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "total,": [
+    {
+      "title": "frequency",
+      "word": "total,",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "transcriptome.": [
+    {
+      "title": "frequency",
+      "word": "transcriptome.",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "types": [
+    {
+      "title": "frequency",
+      "word": "types",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "use": [
+    {
+      "title": "frequency",
+      "word": "use",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "variable": [
+    {
+      "title": "frequency",
+      "word": "variable",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ],
+  "work": [
+    {
+      "title": "frequency",
+      "word": "work",
+      "count": "4",
+      "pmc": "PMC3543189"
+    }
+  ]
+}
