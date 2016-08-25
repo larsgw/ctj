@@ -5,15 +5,17 @@ A [node.js](https://nodejs.org/) program to convert [ContentMine](http://content
 ## Usage
 
     Usage: ctj [options]
-    
+
     Options:
-    
+
       -h, --help                 output usage information
       -V, --version              output the version number
       -p, --project <path>       CProject folder
       -o, --output <path>        where to output results (directory will be created if it doesn't exist, defaults to CProject folder
-      -c, --combine-ami <items>  Combine AMI results of all the papers into JSON, sorted by type. Specify types to combine, seperated by ",". Types are found in the title attribute in the root element of the results.xml file
-      -s, --save-seperately      Save paper JSON and AMI JSON seperately. Default: false
+      -c, --combine-ami <items>  combine AMI results of all the papers into JSON, grouped by type.
+                                 specify types to combine, seperated by ",". Types are found in the title attribute in the root element of the results.xml file
+      -s, --save-seperately      save paper JSON and AMI JSON seperately
+      -M, --no-minify            do not minify JSON output
       -v, --verbosity <level>    amount of information to log (debug, info, log, warn, error)
 
 ## Output

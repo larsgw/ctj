@@ -24,7 +24,7 @@ if (!String.prototype.repeat) {
     if ( isNaN( n ) ) 
       throw new TypeError('can\'t convert ' + this + ' to object');
     
-    if ( n > 0 )
+    if ( n >= 0 )
       return ( new Array( n + 1 ) ).join ( this.toString() )
   }
 }
@@ -49,7 +49,9 @@ program
 	  function ( a ) { return a.split ( ',' ) },
 	  [])
   .option('-s, --save-seperately',
-	  'save paper JSON and AMI JSON seperately. Default: false')
+	  'save paper JSON and AMI JSON seperately')
+  .option('-M, --no-minify',
+	  'do not minify JSON output')
   .option('-v, --verbosity <level>',
 	  'amount of information to log ' +
           '(debug, info, log, warn, error)',
@@ -109,6 +111,7 @@ var project = program.project
   , outfile = program.outfile
   , AMITypes= program.combineAmi
   , saveSeperately= program.saveSeperately
+  , minify  = program.minify
 
 custom.console.info( 'Parsing CProject in folder: ' + project )
 custom.console.info( 'Result will be saved in folder: ' + output )
@@ -139,10 +142,10 @@ var outputData = {
   articles: []
 }
 
-// Get directories in project folder
+// Get PMC* directories in project folder
 var directories = fs.readdirSync( project )
 		    .map( function ( v ) { return /PMC\d+/.test( v ) ? v : undefined } )
-		    .clean( undefined )
+		    .removeEmptyValues()
 
   // Make progress bar
   , dirProgress = new progress( '      [:bar] Parsing directory :current/:total: :dir - ETA :etas', {
@@ -151,7 +154,7 @@ var directories = fs.readdirSync( project )
       total: directories.length
     } )
 
-// For every PMC* directory...
+// For every directory...
 for ( var dirIndex = 0; dirIndex < directories.length; dirIndex++ ) {
   
   var directory = directories[ dirIndex ];
@@ -234,16 +237,23 @@ function getAMIResults ( directory ) {
   return data;
 }
 
+function getJSON ( string ) {
+  if ( minify )
+    return JSON.stringify( string )
+  else
+    return JSON.stringify( string, null, 2 )
+}
+
 try {
   custom.console.info( 'Saving output...' )
   
   if ( !saveSeperately )
-    fs.writeFileSync( [ output, 'data.json' ].join( '/' ), JSON.stringify( outputData, null, 2 ) );
+    fs.writeFileSync( [ output, 'data.json' ].join( '/' ), getJSON( outputData ) );
   
   else { for ( var dataIndex in outputData ) {
-    fs.writeFileSync( [ output, dataIndex + '.json' ].join( '/' ), JSON.stringify( outputData[ dataIndex ], null, 2 ) )}}
+    fs.writeFileSync( [ output, dataIndex + '.json' ].join( '/' ), getJSON( outputData[ dataIndex ] ) )}}
   
   custom.console.info( 'Saving output succeeded!' )
 } catch ( e ) {
-  custom.console.error( 'Saving output failed! Error:', e.toString() )
+  custom.console.error( 'Saving output failed!', e.toString() )
 }
