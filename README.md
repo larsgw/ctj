@@ -1,6 +1,6 @@
 # ctj (CProject to JSON)
 
-A [NodeJS]() program to convert [ContentMine](http://contentmine.org/)'s [CProject]()s to JSON.
+A [NodeJS]() program to convert [ContentMine](http://contentmine.org/)'s [CProject](https://github.com/ContentMine/CTree/blob/master/CProject.md)s to JSON.
 
 ## Usage
 
