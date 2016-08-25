@@ -68,7 +68,7 @@ If you want everything in one file, omit the `-s` flag:
 
     > node path/to/ctj.js -p CProject -o JSON -c genus,genussp,binomial,frequencies
 
-`JSON/` now looks like this:
+`JSON/` then looks like this: (note the added `data.json`)
 
     JSON
     ├── articles.json
