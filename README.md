@@ -30,9 +30,9 @@ Output is JSON, in one or multiple files, depending on the flag `-s`.
 {
 
   // Papers
-  "articles": [
+  "articles": {
     ...
-    {
+    "PMC0000000": {
       "metadata": {
         // JSON from eupmc_result.json
       },
@@ -51,7 +51,7 @@ Output is JSON, in one or multiple files, depending on the flag `-s`.
       }
     },
     ...
-  ],
+  },
   
   // AMI results of all articles, sorted by their type
   ...
@@ -79,9 +79,9 @@ Output is JSON, in one or multiple files, depending on the flag `-s`.
 ```javascript
 // articles.json
 
-[
+{
   ...
-  {
+  "PMC0000000": {
     "metadata": {
       // JSON from eupmc_result.json
     },
@@ -100,7 +100,7 @@ Output is JSON, in one or multiple files, depending on the flag `-s`.
     }
   },
   ...
-]
+}
 
 // AMI results of all articles, sorted by their type
 
