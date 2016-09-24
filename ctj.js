@@ -29,6 +29,22 @@ if (!String.prototype.repeat) {
   }
 }
 
+function getColumns ( columns ) {
+  var columnsDict= {
+    genus: 'genus',
+    binomial: 'binomial',
+    frequencies: 'frequencies',
+    
+    c: 'genus',
+    b: 'binomial',
+    w: 'frequencies'
+  }
+  return columns
+    .split( ',' )
+    .filter( function ( v ) { return columnsDict.hasOwnProperty( v ) } )
+    .map( function ( v ) { return columnsDict[ v ] } )
+}
+
 function cleanDirectoryName ( directory ) {
   return directory.replace( /\/$/, '' )
 }
@@ -46,7 +62,7 @@ program
   .option('-c, --combine-ami <items>',
           'combine AMI results of all the papers into JSON, grouped by type.\n                           '+
           'specify types to combine, seperated by ",". Types are found in the title attribute in the root element of the results.xml file',
-          function ( a ) { return a.split ( ',' ) },
+          getColumns,
           [])
   .option('-s, --save-seperately',
           'save paper JSON and AMI JSON seperately')
@@ -213,7 +229,7 @@ function getAMIResults ( directory ) {
       for ( var childIndex = 0; childIndex < children.length; childIndex++ ) {
         
         // (if this is the first time to use a type, e.g. 'genus' or 'binomial', initiate it)
-        if ( !outputData[ fileDoc.attr.title ] )
+        if ( !outputData.hasOwnProperty( fileDoc.attr.title ) )
           outputData[ fileDoc.attr.title ] = {}
         
         var obj   = outputData[ fileDoc.attr.title ]
