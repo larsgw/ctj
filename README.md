@@ -18,6 +18,57 @@ A [node.js](https://nodejs.org/) program to convert [ContentMine](http://content
       -M, --no-minify            do not minify JSON output
       -v, --verbosity <level>    amount of information to log (debug, info, log, warn, error)
 
+## `-c, --combine-ami`
+
+The `-c, --combine-ami` flag collects ami results and sorts by topic. This is an example of how it would work:
+
+### Input
+
+    CProject/
+    ├── PMC1
+    │   └── results
+    │       └── word
+    │           └── frequencies
+    │               └── results.xml
+    └── PMC2
+        └── results
+            └── word
+                └── frequencies
+                    └── results.xml
+
+Files not necessary for this example are omitted.
+
+### Output
+
+```javascript
+{
+  // Words
+  "foo": [
+    {
+      "count": 31
+      "word": "foo"
+      "pmcid": "PMC1"
+    },
+    {
+      "count": 18
+      "word": "foo"
+      "pmcid": "PMC2"
+    }
+  ],
+  "bar": [
+    {
+      "count": 25
+      "word": "bar"
+      "pmcid": "PMC2"
+    }
+  ]
+}
+```
+
+There are two articles, **PMC1** and **PMC2**. In their respective `results/word/frequencies/results.xml` files, it says what words are found how many times.
+**PMC1** has the word "foo" `31` times. **PMC2** has the word "foo" `18` times, and the word "bar" `25` times. The word "foo" occurs in `2` articles, which is the length of the array in the "foo" entry.
+The word "bar" occurs in `1` article, which is the length of the array in the "bar" entry. The total number of occurrences is `31 + 18 = 49` for "foo" and `25` for "bar".
+
 ## Output
 
 Output is JSON, in one or multiple files, depending on the flag `-s`.
