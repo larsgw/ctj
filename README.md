@@ -4,7 +4,9 @@ A [node.js](https://nodejs.org/) program to convert [ContentMine](http://content
 
 ## Usage
 
-    Usage: ctj [options]
+Download [node.js](https://nodejs.org/en/download/) and [ctj.js](https://github.com/larsgw/ctj/blob/master/ctj.js).
+
+    Usage: nodejs path/to/ctj.js [options]
 
     Options:
 

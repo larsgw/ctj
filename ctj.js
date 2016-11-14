@@ -6,7 +6,7 @@ var program = require( 'commander' )
 
               require( 'colors'    )
 
-// Utilities
+// BEGIN Utilities
 
 Array.prototype.removeEmptyValues = function () {
   for ( var i = 0; i < this.length; i++ ) {
@@ -28,6 +28,8 @@ if (!String.prototype.repeat) {
       return ( new Array( n + 1 ) ).join ( this.toString() )
   }
 }
+
+// END
 
 function getColumns ( columns ) {
   var columnsDict= {
@@ -198,11 +200,14 @@ for ( var dirIndex = 0; dirIndex < directories.length; dirIndex++ ) {
 function getAMIResults ( directory ) {
   
   // Get sequencesfiles.xml
-  var doc = new xmldoc.XmlDocument( fs.readFileSync(
-    [ project, directory, 'sequencesfiles.xml' ].join('/'),
-    'utf8' ) )
+  var data = {}
+    , file = [ project, directory, 'sequencesfiles.xml' ].join('/')
+  
+  if ( !fs.existsSync( file ) )
+    return data
+  
+  var doc = new xmldoc.XmlDocument( fs.readFileSync( file, 'utf8' ) )
     , files = doc.children
-    , data = {}
   
   // For every file in sequencesfiles.xml...
   for ( var fileIndex = 0; fileIndex < files.length; fileIndex++ ) {
