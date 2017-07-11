@@ -21,12 +21,10 @@ Use the following commands to get this CProject.
     // Insert as many AMI plugins as you like, but note that it is only tested with these yet
     
     > ami2-sequence --project CProject/ --filter file\(\*\*/results.xml\) -o sequencesfiles.xml
-    
-    // Necessary for current version (0.0.1); breaks otherwise
 
-`CProject/` now looks like this:
+`CProject` now looks like this:
 
-    CProject/
+    CProject
     ├── eupmc_fulltext_html_urls.txt
     ├── eupmc_results.json
     ├── PMC3543189
@@ -52,7 +50,7 @@ Use the following commands to get this CProject.
 
 To get the output, use the following command.
 
-    > node path/to/ctj.js -p CProject -o JSON -s -c genus,genussp,binomial,frequencies
+    > ctj collect -p CProject -o JSON -c genus,genussp,binomial,frequencies -s
 
 `JSON/` now looks like this:
 
@@ -66,7 +64,7 @@ Perhaps you noticed that `genussp.json` does not exist, while we did pass it to 
 
 If you want everything in one file, omit the `-s` flag:
 
-    > node path/to/ctj.js -p CProject -o JSON -c genus,genussp,binomial,frequencies
+    > ctj collect -p CProject -o JSON -c genus,genussp,binomial,frequencies
 
 `JSON/` then looks like this: (note the added `data.json`)
 

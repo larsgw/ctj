@@ -2,29 +2,67 @@
 
 A [node.js](https://nodejs.org/) program to convert [ContentMine](http://contentmine.org/)'s [CProject](https://github.com/ContentMine/CTree/blob/master/CProject.md)s to JSON.
 
+## TOC
+
+- [Install](#install)
+- [Usage](#usage)
+  - [ctj collect](#ctj-collect)
+    - [Group results](#group-results)
+    - [Save separately](#save-separately)
+      - [One file](#one-file)
+      - [Multiple files](#multiple-files)
+
+## Install
+
+```js
+npm install --global ctj
+```
+
+or
+
+```js
+npm i -g ctj
+```
+
+for short.
+
 ## Usage
 
-Download [node.js](https://nodejs.org/en/download/) and [ctj.js](https://github.com/larsgw/ctj/blob/master/ctj.js).
+    Usage: ctj [options] [command]
 
-    Usage: nodejs path/to/ctj.js [options]
 
     Options:
 
-      -h, --help                 output usage information
-      -V, --version              output the version number
-      -p, --project <path>       CProject folder
-      -o, --output <path>        where to output results (directory will be created if it doesn't exist, defaults to CProject folder
-      -c, --combine-ami <items>  combine AMI results of all the papers into JSON, grouped by type.
-                                 specify types to combine, seperated by ",". Types are found in the title attribute in the root element of the results.xml file
-      -s, --save-seperately      save paper JSON and AMI JSON seperately
-      -M, --no-minify            do not minify JSON output
-      -v, --verbosity <level>    amount of information to log (debug, info, log, warn, error)
+      -V, --version  output the version number
+      -h, --help     output usage information
 
-## `-c, --combine-ami`
 
-The `-c, --combine-ami` flag collects ami results and sorts by topic. This is an example of how it would work:
+    Commands:
 
-### Input
+      collect [options]  Collect AMI results into one or several JSON files
+      help [cmd]         display help for [cmd]
+
+### ctj collect
+
+Convert CProjects to JSON in the most basic way.
+
+    Usage: ctj collect [options]
+
+
+    Options:
+
+      -V, --version                output the version number
+      -p, --project <path>         CProject folder
+      -o, --output <path>          Output directory (directory will be created if it doesn't exist, defaults to CProject folder
+      -g, --group-results <items>  group AMI results of all the papers into JSON, grouped by type.
+                                specify types to combine, separated by ",". Types are found in the title attribute in the root element of the results.xml file
+      -s, --save-separately        save paper JSON and AMI JSON separately
+      -M, --no-minify              do not minify JSON output
+      -h, --help                   output usage information
+
+#### Group results
+
+The `-g, --group-results` flag collects ami results and sorts by topic. This is an example of how it would work for the following CProject:
 
     CProject/
     ├── PMC1
@@ -38,9 +76,9 @@ The `-c, --combine-ami` flag collects ami results and sorts by topic. This is an
                 └── frequencies
                     └── results.xml
 
-Files not necessary for this example are omitted.
+(files not necessary for this example are omitted)
 
-### Output
+This is the output:
 
 ```javascript
 {
@@ -71,11 +109,13 @@ There are two articles, **PMC1** and **PMC2**. In their respective `results/word
 **PMC1** has the word "foo" `31` times. **PMC2** has the word "foo" `18` times, and the word "bar" `25` times. The word "foo" occurs in `2` articles, which is the length of the array in the "foo" entry.
 The word "bar" occurs in `1` article, which is the length of the array in the "bar" entry. The total number of occurrences is `31 + 18 = 49` for "foo" and `25` for "bar".
 
-## Output
+#### Save separately
 
-Output is JSON, in one or multiple files, depending on the flag `-s`.
+Output is JSON, in one or multiple files, depending on the flag `-s, --save-separately`.
 
-### One file
+##### One file
+
+Without `-s`.
 
 ```javascript
 // data.json
@@ -127,7 +167,9 @@ Output is JSON, in one or multiple files, depending on the flag `-s`.
 }
 ```
 
-### Multiple files (`-s`)
+##### Multiple files
+
+With `-s`.
 
 ```javascript
 // articles.json
@@ -195,11 +237,3 @@ Output is JSON, in one or multiple files, depending on the flag `-s`.
 
 // etc.
 ```
-
-## Dependencies
-
- * commander
- * fs
- * xmldoc
- * progress
- * colors

@@ -2,26 +2,38 @@
   "name": "ctj",
   "version": "0.0.1",
   "description": "Convert CProjects to JSON",
-  "main": "lib/index.js",
-  "directories": {
-    "example": "example"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/larsgw/ctj.git"
+  "homepage": "https://github.com/larsgw/ctj#readme",
+  "author": "Lars Willighagen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larsgw/ctj/issues"
   },
   "keywords": [
     "contentmining",
     "datamining",
     "science"
   ],
-  "author": "Lars Willighagen",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/larsgw/ctj/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larsgw/ctj.git"
   },
-  "homepage": "https://github.com/larsgw/ctj#readme"
+  "directories": {
+    "example": "example"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard \"src/**/*.js\"",
+    "babel": "babel src -d lib --copy-files"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.11.0",
+    "progress": "^2.0.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "standard": "^10.0.2"
+  }
 }
