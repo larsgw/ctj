@@ -29,7 +29,7 @@ program
 
   .parse(process.argv)
 
-if (process.rawArgs.length <= 2) {
+if (process.argv.length <= 2) {
   program.help()
 }
 
@@ -54,15 +54,20 @@ if (!project) {
   fs.mkdirSync(output)
 }
 
-logger.info(`CProject To JSON (ctj) config:
-Input directory: ${project}
-Output directory: ${output}`)
+logger.info('CProject To JSON (ctj) config:')
+logger.info(`Input directory: ${project}`)
+logger.info(`Output directory: ${output}`)
 
 if (groupResults) {
   logger.info(`Also grouping AMI results of types: ${groupResults}`)
 }
 
+// TODO use CProject/sequencesfiles.xml
 const directories = fs.readdirSync(project).filter(directory => /PMC\d+/.test(directory))
+// BEGIN test
+// .filter(dir => dir === 'PMC3841577')
+// let i = 0
+// END test
 
 const progressBarText = '[:bar] Parsing directory :current/:total: :directory (eta :etas)'
 const progressBar = new Progress(progressBarText, {
@@ -82,10 +87,25 @@ outputData.articles = Object.assign(...directories.map(directory => {
     }
 
     for (let results in groupedData[group]) {
-      if (!outputData[group].hasOwnProperty(results)) {
-        outputData[group][results] = []
+      // Regular
+      if (Array.isArray(results)) {
+        if (!outputData[group].hasOwnProperty(results)) {
+          outputData[group][results] = []
+        }
+        outputData[group][results].push(...groupedData[group][results])
+
+      // Regex: nested objects
+      } else {
+        if (!outputData[group].hasOwnProperty(results)) {
+          outputData[group][results] = {}
+        }
+        for (let result in groupedData[group][results]) {
+          if (!outputData[group][results].hasOwnProperty(result)) {
+            outputData[group][results][result] = []
+          }
+          outputData[group][results][result].push(...groupedData[group][results][result])
+        }
       }
-      outputData[group][results].push(...groupedData[group][results])
     }
   }
 
@@ -95,6 +115,7 @@ outputData.articles = Object.assign(...directories.map(directory => {
     amiResults
   }}
 }))
+
 const stringify = json => JSON.stringify(json, ...(minify ? [] : [null, 2]))
 
 logger.info('Saving output...')

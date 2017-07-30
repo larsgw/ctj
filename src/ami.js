@@ -4,9 +4,8 @@ import {XmlDocument} from 'xmldoc'
 
 const sequencesFilename = 'sequencesfiles.xml'
 
-const getXmlFile = function (fileName, encoding = 'utf8') {
-  return new XmlDocument(fs.readFileSync(fileName, encoding))
-}
+const getXmlFile = (fileName, encoding = 'utf8') => new XmlDocument(fs.readFileSync(fileName, encoding))
+const isNotTextNode = node => !node.text
 
 const getResultFiles = function (project, directory) {
   const sequenceFile = path.join(project, directory, sequencesFilename)
@@ -15,7 +14,7 @@ const getResultFiles = function (project, directory) {
     return []
   }
 
-  return getXmlFile(sequenceFile).children.map(({attr: {name}}) => name)
+  return getXmlFile(sequenceFile).children.filter(isNotTextNode).map(({attr: {name}}) => name)
 }
 
 const getAmiResults = function (project, directory, groupResults) {
@@ -25,23 +24,49 @@ const getAmiResults = function (project, directory, groupResults) {
 
   files.forEach(fileName => {
     const {children, attr: {title: resultType}} = getXmlFile(fileName)
-    const results = children.map(({attr}) => attr)
+    const results = children.filter(isNotTextNode).map(({attr}) => attr)
     data[resultType] = results
 
+    // Group AMI results
     if (groupResults.includes(resultType)) {
       results.forEach(result => {
         if (!groupedData.hasOwnProperty(resultType)) {
           groupedData[resultType] = {}
         }
+        result.pmc = directory
 
         const prop = result.match || result.word || result.exact
 
-        if (!groupedData[resultType].hasOwnProperty(prop)) {
-          groupedData[resultType][prop] = []
-        }
+        // If not regex, make list with hits
+        if (prop) {
+          // Init list
+          if (!groupedData[resultType].hasOwnProperty(prop)) {
+            groupedData[resultType][prop] = []
+          }
 
-        result.pmc = directory
-        groupedData[resultType][prop].push(result)
+          // Add hit
+          groupedData[resultType][prop].push(result)
+
+        // If regex, make set of lists with hits
+        } else {
+          const nameProp = Object.keys(result).find(key => /^name\d+$/.test(key))
+          const name = result[nameProp]
+          const matchProp = nameProp.replace(/^name/, 'value')
+          const match = result[matchProp]
+
+          // Init set
+          if (!groupedData[resultType].hasOwnProperty(name)) {
+            groupedData[resultType][name] = {}
+          }
+
+          // Init list
+          if (!groupedData[resultType][name].hasOwnProperty(match)) {
+            groupedData[resultType][name][match] = []
+          }
+
+          // Add hit
+          groupedData[resultType][name][match].push(result)
+        }
       })
     }
   })
