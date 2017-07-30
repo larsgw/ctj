@@ -1,6 +1,6 @@
 {
   "name": "ctj",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Convert CProjects to JSON",
   "homepage": "https://github.com/larsgw/ctj#readme",
   "author": "Lars Willighagen",
