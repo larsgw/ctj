@@ -96,7 +96,7 @@ directories.forEach(directory => {
 })
 
 for (let type in defineLater.types) {
-  rdf += `type:${type} rdfs:label "${useTypes[defineLater.types[type]]}" .
+  rdf += `type:${type.padEnd(maxChars)} rdfs:label "${useTypes[defineLater.types[type]]}" .
 `
 }
 
