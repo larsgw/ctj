@@ -50,7 +50,7 @@ Use the following commands to get this CProject.
 
 To get the output, use the following command.
 
-    > ctj collect -p CProject -o JSON -c genus,genussp,binomial,frequencies -s
+    > ctj collect -p CProject -o JSON -g genus,genussp,binomial,frequencies -s
 
 `JSON/` now looks like this:
 
@@ -60,11 +60,11 @@ To get the output, use the following command.
     ├── frequencies.json
     └── genus.json
 
-Perhaps you noticed that `genussp.json` does not exist, while we did pass it to the `-c` flag. This is because `CProject/PMC3543189/results/species/genussp/` has `empty.xml` and not `results.xml`, and is therefore not mentioned in `CProject/PMC3543189/sequencesfiles.xml`.
+Perhaps you noticed that `genussp.json` does not exist, while we did pass it to the `-g` flag. This is because `CProject/PMC3543189/results/species/genussp/` has `empty.xml` and not `results.xml`, and is therefore not mentioned in `CProject/PMC3543189/sequencesfiles.xml`.
 
 If you want everything in one file, omit the `-s` flag:
 
-    > ctj collect -p CProject -o JSON -c genus,genussp,binomial,frequencies
+    > ctj collect -p CProject -o JSON -g genus,genussp,binomial,frequencies
 
 `JSON/` then looks like this: (note the added `data.json`)
 
