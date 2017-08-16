@@ -1,9 +1,10 @@
 import fs from 'fs'
 import path from 'path'
 import program from 'commander'
-import Progress from 'progress'
-import 'colors'
 import logger from 'winston'
+import makeBar from './util/progress'
+
+import checkIOArgs from './util/checkIOArgs'
 
 import ctj from '../package.json'
 import {getAmiResults} from './ami'
@@ -35,24 +36,12 @@ if (process.argv.length <= 2) {
 
 const metadataFilename = 'eupmc_result.json'
 
-let {
-  project,
-  output,
+const {project, output} = checkIOArgs(program)
+const {
   groupResults,
   saveSeparately,
   minify
 } = program
-
-if (!project) {
-  throw new Error('No CProject directory provided')
-} else if (!fs.existsSync(project)) {
-  throw new Error(`CProject directory: ${project} does not exist`)
-} else if (!output) {
-  output = project
-} else if (!fs.existsSync(output)) {
-  logger.info(`Creating output directory: ${output}`)
-  fs.mkdirSync(output)
-}
 
 logger.info('CProject To JSON (ctj) config:')
 logger.info(`Input directory: ${project}`)
@@ -69,12 +58,7 @@ const directories = fs.readdirSync(project).filter(directory => /PMC\d+/.test(di
 // let i = 0
 // END test
 
-const progressBarText = '[:bar] Parsing directory :current/:total: :directory (eta :etas)'
-const progressBar = new Progress(progressBarText, {
-  complete: '='.green,
-  width: 30,
-  total: directories.length
-})
+const progressBar = makeBar({total: directories.length})
 
 const outputData = {}
 outputData.articles = Object.assign(...directories.map(directory => {
