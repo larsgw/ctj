@@ -72,7 +72,7 @@ outputData.articles = Object.assign(...directories.map(directory => {
 
     for (let results in groupedData[group]) {
       // Regular
-      if (Array.isArray(results)) {
+      if (Array.isArray(groupedData[group][results])) {
         if (!outputData[group].hasOwnProperty(results)) {
           outputData[group][results] = []
         }
