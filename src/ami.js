@@ -7,6 +7,8 @@ const sequencesFilename = 'sequencesfiles.xml'
 const getXmlFile = (fileName, encoding = 'utf8') => new XmlDocument(fs.readFileSync(fileName, encoding))
 const isNotTextNode = node => !node.text
 
+const getLabel = ({match, word, exact}) => match || word || exact
+
 const getResultFiles = function (project, directory) {
   const sequenceFile = path.join(project, directory, sequencesFilename)
 
@@ -35,7 +37,7 @@ const getAmiResults = function (project, directory, groupResults) {
         }
         result.pmc = directory
 
-        const prop = result.match || result.word || result.exact
+        const prop = getLabel(result)
 
         // If not regex, make list with hits
         if (prop) {
@@ -74,4 +76,4 @@ const getAmiResults = function (project, directory, groupResults) {
   return {data, groupedData}
 }
 
-export {getResultFiles, getAmiResults}
+export {getLabel, getResultFiles, getAmiResults}
