@@ -31,7 +31,7 @@ const maxChars = Math.max(...Object.keys(useTypes).map(a => a.length))
 // END
 
 program
-  .name('ctj collect')
+  .name('ctj rdf')
   .version(ctj.version)
 
   .option('-p, --project <path>',
