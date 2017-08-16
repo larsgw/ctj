@@ -1,6 +1,7 @@
-# ctj (CProject to JSON)
+# ctj
+_CProject to JSON_
 
-A [node.js](https://nodejs.org/) program to convert [ContentMine](http://contentmine.org/)'s [CProject](https://github.com/ContentMine/CTree/blob/master/CProject.md)s to JSON.
+Convert [ContentMine](http://contentmine.org/)'s [CProject](https://github.com/ContentMine/CTree/blob/master/CProject.md)s to JSON or other formats.
 
 ## TOC
 
@@ -11,6 +12,7 @@ A [node.js](https://nodejs.org/) program to convert [ContentMine](http://content
     - [Save separately](#save-separately)
       - [One file](#one-file)
       - [Multiple files](#multiple-files)
+  - [ctj rdf](#ctj-rdf)
 
 ## Install
 
@@ -40,6 +42,7 @@ for short.
     Commands:
 
       collect [options]  Collect AMI results into one or several JSON files
+      rdf [options]      Collect AMI results into a RDF file
       help [cmd]         display help for [cmd]
 
 ### ctj collect
@@ -237,3 +240,34 @@ With `-s`.
 
 // etc.
 ```
+
+### ctj rdf
+
+Convert CProjects to rdf. Currently only Turtle support.
+
+    Usage: ctj rdf [options]
+
+
+    Options:
+
+      -V, --version         output the version number
+      -p, --project <path>  CProject folder
+      -o, --output <path>   Output directory (directory will be created if it doesn't exist, defaults to CProject folder
+      -h, --help            output usage information
+
+Outputs triples like this:
+
+    @prefix ...
+    
+    pmcid:PMC1 cito:discusses
+      :MD5_HASH_1 ,
+      :MD5_HASH_2 .
+    
+    pmcid:PMC2 cito:discusses
+      :MD5_HASH_2 .
+    
+    :MD5_HASH_1 a type:binomial ; rdfs:label "Speciesii nameus" .
+    :MD5_HASH_2 a type:genus    ; rdfs:label "Speciesii" .
+    
+    type:binomial rdfs:label "Species" .
+    type:genus    rdfs:label "Genus" .
