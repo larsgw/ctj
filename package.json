@@ -26,6 +26,7 @@
     "babel": "babel src -d lib --copy-files"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "colors": "^1.1.2",
     "commander": "^2.11.0",
     "progress": "^2.0.0",
