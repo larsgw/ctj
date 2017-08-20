@@ -2,13 +2,15 @@ import Progress from 'progress'
 import 'colors'
 
 const makeBar = function ({
+  msg = 'Parsing directory',
+
   total,
   width = 30,
   curr = 0,
   complete = '='.green,
   head = complete,
   incomplete = ' ',
-  text = '[:bar] Parsing directory :current/:total: :directory (eta :etas)',
+  text = `[:bar] ${msg} :current/:total: :item (eta :etas)`,
 
   renderThrottle,
   clear,

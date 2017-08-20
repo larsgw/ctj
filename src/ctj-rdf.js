@@ -2,7 +2,7 @@ import 'babel-polyfill'
 import fs from 'fs'
 import path from 'path'
 import program from 'commander'
-import logger from 'winston'
+import setupLogger from './util/logger'
 import makeBar from './util/progress'
 import md5 from 'md5'
 
@@ -11,28 +11,13 @@ import checkIOArgs from './util/checkIOArgs'
 import ctj from '../package.json'
 import {getAmiResults, getLabel} from './ami'
 
-// BEGIN CONSTANT consts
-const ns = 'https://larsgw.github.io/ctj/rdf/#/'
-const prefixes = {
-  '': `${ns}hash/`,
-  type: `${ns}type/`,
-  rdfs: 'http://www.w3.org/2000/01/rdf-schema#',
-  cito: 'http://purl.org/spar/cito/',
-  pmc: 'http://identifiers.org/pmcid/'
-}
-
-const useTypes = {
-  genus: 'Genus',
-  genussp: 'Genus Species',
-  binomial: 'Species'
-}
-
-const maxChars = Math.max(...Object.keys(useTypes).map(a => a.length))
-// END
-
 program
   .name('ctj rdf')
   .version(ctj.version)
+
+  .option('-l, --log-level <level>', 'amount of information to log ' +
+    '(silent, verbose, info*, data, warn, error, or debug)',
+    'info')
 
   .option('-p, --project <path>',
           'CProject folder')
@@ -46,6 +31,26 @@ if (process.argv.length <= 2) {
   program.help()
 }
 
+const logger = setupLogger(program)
+
+const ns = 'https://larsgw.github.io/ctj/rdf/#/'
+const prefixes = {
+  '': `${ns}hash/`,
+  type: `${ns}type/`,
+  rdfs: 'http://www.w3.org/2000/01/rdf-schema#',
+  cito: 'http://purl.org/spar/cito/',
+  pmc: 'http://identifiers.org/pmcid/',
+  wdt: 'http://www.wikidata.org/prop/direct/'
+}
+
+const useTypes = {
+  genus: 'Genus',
+  genussp: 'Genus Species',
+  binomial: 'Species'
+}
+
+const maxChars = Math.max(...Object.keys(useTypes).map(a => a.length))
+
 const {project, output} = checkIOArgs(program)
 
 const isUniqueHit = (thing, index, array) => array.findIndex(elm => getLabel(thing) === getLabel(elm)) === index
@@ -56,12 +61,24 @@ logger.info(`Output directory: ${output}`)
 
 // TODO don't assume directory name is a PMCID
 const directories = fs.readdirSync(project).filter(directory => /PMC\d+/.test(directory))
-const progressBar = makeBar({total: directories.length})
 
-let rdf = Object.keys(prefixes).map(prefix => `@prefix ${prefix}: <${prefixes[prefix]}> .` + '\n').join('') + '\n'
+// TODO `import()`
+// TODO dynamic type
+const {buildRdf} = require('./rdf/turtle')
+
+// TODO
+const parsingProgress = makeBar({total: directories.length})
+
+const rdfSubjects = {}
 const defineLater = {types: {}, hits: {}}
 
 directories.forEach(directory => {
+  // TODO don't assume directory name is a PMCID
+  const json = {
+    'wdt:P932': `"${directory.replace(/^PMC/, '')}"`,
+    'cito:discusses': []
+  }
+
   const ami = getAmiResults(project, directory, []).data
 
   for (let type in ami) {
@@ -73,11 +90,7 @@ directories.forEach(directory => {
       defineLater.types[type] = type
     }
 
-    // TODO don't assume directory name is a PMCID
-    rdf += `pmc:${directory} cito:discusses` + '\n'
-
     const hits = ami[type].filter(isUniqueHit)
-    const lastHit = hits.slice(-1)[0]
 
     for (let hit of hits) {
       const name = getLabel(hit)
@@ -87,26 +100,27 @@ directories.forEach(directory => {
         defineLater.hits[hitHash] = {type, name}
       }
 
-      const suffix = hit === lastHit ? ' .\n' : ' ,'
-      rdf += `  :${hitHash}${suffix}` + '\n'
+      json['cito:discusses'].push(`:${hitHash}`)
     }
   }
 
-  progressBar.tick({directory})
+  parsingProgress.tick({item: directory})
+  rdfSubjects[`pmc:${directory}`] = json
 })
 
 for (let type in defineLater.types) {
-  rdf += `type:${type.padEnd(maxChars)} rdfs:label "${useTypes[defineLater.types[type]]}" .
-`
+  rdfSubjects[`type:${type.padEnd(maxChars)}`] = {'rdfs:label': `"${useTypes[defineLater.types[type]]}"`}
 }
-
-rdf += '\n'
 
 for (let hitHash in defineLater.hits) {
   const {type, name} = defineLater.hits[hitHash]
-  rdf += `:${hitHash} a type:${type.padEnd(maxChars)} ; rdfs:label "${name}" .
-`
+  rdfSubjects[`:${hitHash}`] = {a: `type:${type.padEnd(maxChars)}`, 'rdfs:label': `"${name}"`}
 }
+
+logger.info('Directories parsed!')
+
+const formattingProgress = makeBar({msg: 'Formatting rdf item', total: Object.keys(rdfSubjects).length})
+const rdf = buildRdf(rdfSubjects, prefixes, {stepCallback (item) { formattingProgress.tick({item}) }})
 
 logger.info('Saving output...')
 

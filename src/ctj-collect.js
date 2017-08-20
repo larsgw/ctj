@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import program from 'commander'
-import logger from 'winston'
+import setupLogger from './util/logger'
 import makeBar from './util/progress'
 
 import checkIOArgs from './util/checkIOArgs'
@@ -12,6 +12,10 @@ import {getAmiResults} from './ami'
 program
   .name('ctj collect')
   .version(ctj.version)
+
+  .option('-l, --log-level <level>', 'amount of information to log ' +
+    '(silent, verbose, info*, data, warn, error, or debug)',
+    'info')
 
   .option('-p, --project <path>',
           'CProject folder')
@@ -33,6 +37,8 @@ program
 if (process.argv.length <= 2) {
   program.help()
 }
+
+const logger = setupLogger(program)
 
 const metadataFilename = 'eupmc_result.json'
 
