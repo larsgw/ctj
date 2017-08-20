@@ -3,6 +3,7 @@
   <head>
     <title>ctj</title>
     <meta charset="utf8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
     <style>
 body {
   margin: 0 auto;
@@ -12,14 +13,9 @@ body {
 body * {
   overflow-x: auto;
 }
-pre, code {
-  background-color: #eee;
-  line-height: 1.5em;
-}
-pre {
-  padding: 0.5em;
-}
 code {
+  background-color: #f8f8f8;
+  line-height: 1.5em;
   padding: 0 5px;
 }
     </style>
@@ -68,7 +64,7 @@ code {
 
     <h2 id="usage">Usage</h2>
 
-    <pre><code>Usage: ctj [options] [command]
+    <pre class="prettyprint"><code class="hljs">Usage: ctj [options] [command]
 
 
     Options:
@@ -90,7 +86,7 @@ code {
 
     <p>Convert CProjects to JSON in the most basic way.</p>
 
-    <pre><code>Usage: ctj collect [options]
+    <pre class="prettyprint"><code class="hljs">Usage: ctj collect [options]
 
 
     Options:
@@ -111,7 +107,7 @@ code {
 
     <p>The <code>-g, --group-results</code> flag collects ami results and sorts by topic. This is an example of how it would work for the following CProject:</p>
 
-    <pre><code>CProject/
+    <pre class="prettyprint"><code class="hljs">CProject/
     ├── PMC1
     │   └── results
     │       └── word
@@ -298,7 +294,7 @@ code {
 
     <p>Convert CProjects to rdf. Currently only Turtle support.</p>
 
-    <pre><code>Usage: ctj rdf [options]
+    <pre class="prettyprint"><code class="hljs">Usage: ctj rdf [options]
 
 
     Options:
@@ -311,7 +307,7 @@ code {
 
     <p>Outputs triples like this:</p>
 
-    <pre><code>@prefix ...
+    <pre class="prettyprint"><code class="hljs">@prefix ...
 
 pmcid:PMC1 cito:discusses
   :MD5_HASH_1 ,
