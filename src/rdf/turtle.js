@@ -1,25 +1,29 @@
-const buildPrefixes = prefixes =>
-  Object.keys(prefixes).map(prefix => `@prefix ${prefix}: <${prefixes[prefix]}> .`).join('\n')
+const empty = val => Array.isArray(val) && val.length === 0
 
-const buildSubject = function (subject, props) {
-  let rdf = `${subject} `
+const build = (object, map, join) => Object.keys(object)
+  .map(prop => map(prop, object[prop]))
+  .filter(Boolean).join(join)
 
-  rdf += Object.keys(props).map(prop => `${prop} ${[].concat(props[prop]).join(' ,\n  ')}`).join(' ;\n  ')
+const buildPrefixes = prefixes => build(prefixes, (name, uri) => `@prefix ${name}: <${uri}> .`, '\n')
 
-  return rdf
-}
+const buildSubject = (subject, props) => !Object.keys(props).length
+  ? ''
+  : `${subject} ` +
+    build(props, (prop, val) => empty(val) ? '' : `${prop} ${[].concat(val).join(' ,\n  ')}`, ' ;\n  ')
 
 const buildRdf = function (subjects, prefixes, {stepCallback = () => {}, successCallback = () => {}}) {
-  let rdf = buildPrefixes(prefixes) + '\n\n'
-
-  rdf += Object.keys(subjects).map(subject => {
-    const data = subjects[subject]
-    const rdf = buildSubject(subject, data)
+  const prefixRdf = buildPrefixes(prefixes)
+  const subjectRdf = build(subjects, subject => {
+    const rdf = buildSubject(subject, subjects[subject])
 
     stepCallback(subject)
 
     return rdf
-  }).join(' .\n\n') + ' .'
+  }, ' .\n\n')
+
+  const rdf = `${prefixRdf}
+
+${subjectRdf} .`
 
   successCallback(rdf)
 
