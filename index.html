@@ -1,107 +1,136 @@
-<h1 id="ctj">ctj</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ctj</title>
+    <meta charset="utf8" />
+    <style>
+body {
+  margin: 0 auto;
+  max-width: 700px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+body * {
+  overflow-x: auto;
+}
+pre, code {
+  background-color: #eee;
+  line-height: 1.5em;
+}
+pre {
+  padding: 0.5em;
+}
+code {
+  padding: 0 5px;
+}
+    </style>
+  </head>
+  <body>
+<a href="https://github.com/larsgw/ctj"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
-<p><em>CProject to JSON</em></p>
+    <h1 id="ctj">ctj</h1>
 
-<p>Convert <a href="http://contentmine.org/">ContentMine</a>’s <a href="https://github.com/ContentMine/CTree/blob/master/CProject.md">CProject</a>s to JSON or other formats.</p>
+    <p><em>CProject to JSON</em></p>
 
-
-
-<h2 id="toc">TOC</h2>
-
-<ul>
-<li><a href="#install">Install</a></li>
-<li><a href="#usage">Usage</a> <br>
-<ul><li><a href="#ctj-collect">ctj collect</a></li>
-<li><a href="#group-results">Group results</a></li>
-<li><a href="#save-separately">Save separately</a> <br>
-<ul><li><a href="#one-file">One file</a></li>
-<li><a href="#multiple-files">Multiple files</a></li></ul></li>
-<li><a href="#ctj-rdf">ctj rdf</a></li></ul></li>
-</ul>
-
-
-
-<h2 id="install">Install</h2>
-
-
-
-<pre class="prettyprint"><code class="language-js hljs ">npm install --global ctj</code></pre>
-
-<p>or</p>
-
-
-
-<pre class="prettyprint"><code class="language-js hljs ">npm i -g ctj</code></pre>
-
-<p>for short.</p>
+    <p>Convert <a href="http://contentmine.org/">ContentMine</a>’s <a href="https://github.com/ContentMine/CTree/blob/master/CProject.md">CProject</a>s to JSON or other formats.</p>
 
 
 
-<h2 id="usage">Usage</h2>
+    <h2 id="toc">TOC</h2>
 
-<pre><code>Usage: ctj [options] [command]
-
-
-Options:
-
-  -V, --version  output the version number
-  -h, --help     output usage information
-
-
-Commands:
-
-  collect [options]  Collect AMI results into one or several JSON files
-  rdf [options]      Collect AMI results into a RDF file
-  help [cmd]         display help for [cmd]
-</code></pre>
+    <ul>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#usage">Usage</a> <br>
+    <ul><li><a href="#ctj-collect">ctj collect</a></li>
+    <li><a href="#group-results">Group results</a></li>
+    <li><a href="#save-separately">Save separately</a> <br>
+    <ul><li><a href="#one-file">One file</a></li>
+    <li><a href="#multiple-files">Multiple files</a></li></ul></li>
+    <li><a href="#ctj-rdf">ctj rdf</a></li></ul></li>
+    </ul>
 
 
 
-<h3 id="ctj-collect">ctj collect</h3>
-
-<p>Convert CProjects to JSON in the most basic way.</p>
-
-<pre><code>Usage: ctj collect [options]
-
-
-Options:
-
-  -V, --version                output the version number
-  -p, --project &lt;path&gt;         CProject folder
-  -o, --output &lt;path&gt;          Output directory (directory will be created if it doesn't exist, defaults to CProject folder
-  -g, --group-results &lt;items&gt;  group AMI results of all the papers into JSON, grouped by type.
-                            specify types to combine, separated by ",". Types are found in the title attribute in the root element of the results.xml file
-  -s, --save-separately        save paper JSON and AMI JSON separately
-  -M, --no-minify              do not minify JSON output
-  -h, --help                   output usage information
-</code></pre>
+    <h2 id="install">Install</h2>
 
 
 
-<h4 id="group-results">Group results</h4>
+    <pre class="prettyprint"><code class="language-js hljs ">npm install --global ctj</code></pre>
 
-<p>The <code>-g, --group-results</code> flag collects ami results and sorts by topic. This is an example of how it would work for the following CProject:</p>
-
-<pre><code>CProject/
-├── PMC1
-│   └── results
-│       └── word
-│           └── frequencies
-│               └── results.xml
-└── PMC2
-    └── results
-        └── word
-            └── frequencies
-                └── results.xml
-</code></pre>
-
-<p>(files not necessary for this example are omitted)</p>
-
-<p>This is the output:</p>
+    <p>or</p>
 
 
 
-<pre class="prettyprint"><code class="language-javascript hljs ">{
+    <pre class="prettyprint"><code class="language-js hljs ">npm i -g ctj</code></pre>
+
+    <p>for short.</p>
+
+
+
+    <h2 id="usage">Usage</h2>
+
+    <pre><code>Usage: ctj [options] [command]
+
+
+    Options:
+
+      -V, --version  output the version number
+      -h, --help     output usage information
+
+
+    Commands:
+
+      collect [options]  Collect AMI results into one or several JSON files
+      rdf [options]      Collect AMI results into a RDF file
+      help [cmd]         display help for [cmd]
+    </code></pre>
+
+
+
+    <h3 id="ctj-collect">ctj collect</h3>
+
+    <p>Convert CProjects to JSON in the most basic way.</p>
+
+    <pre><code>Usage: ctj collect [options]
+
+
+    Options:
+
+      -V, --version                output the version number
+      -p, --project &lt;path&gt;         CProject folder
+      -o, --output &lt;path&gt;          Output directory (directory will be created if it doesn't exist, defaults to CProject folder
+      -g, --group-results &lt;items&gt;  group AMI results of all the papers into JSON, grouped by type.
+                                specify types to combine, separated by ",". Types are found in the title attribute in the root element of the results.xml file
+      -s, --save-separately        save paper JSON and AMI JSON separately
+      -M, --no-minify              do not minify JSON output
+      -h, --help                   output usage information
+    </code></pre>
+
+
+
+    <h4 id="group-results">Group results</h4>
+
+    <p>The <code>-g, --group-results</code> flag collects ami results and sorts by topic. This is an example of how it would work for the following CProject:</p>
+
+    <pre><code>CProject/
+    ├── PMC1
+    │   └── results
+    │       └── word
+    │           └── frequencies
+    │               └── results.xml
+    └── PMC2
+        └── results
+            └── word
+                └── frequencies
+                    └── results.xml
+    </code></pre>
+
+    <p>(files not necessary for this example are omitted)</p>
+
+    <p>This is the output:</p>
+
+
+
+    <pre class="prettyprint"><code class="language-javascript hljs ">{
   <span class="hljs-comment">// Words</span>
   <span class="hljs-string">"foo"</span>: [
     {
@@ -124,25 +153,25 @@ Options:
   ]
 }</code></pre>
 
-<p>There are two articles, <strong>PMC1</strong> and <strong>PMC2</strong>. In their respective <code>results/word/frequencies/results.xml</code> files, it says what words are found how many times. <br>
-<strong>PMC1</strong> has the word “foo” <code>31</code> times. <strong>PMC2</strong> has the word “foo” <code>18</code> times, and the word “bar” <code>25</code> times. The word “foo” occurs in <code>2</code> articles, which is the length of the array in the “foo” entry. <br>
-The word “bar” occurs in <code>1</code> article, which is the length of the array in the “bar” entry. The total number of occurrences is <code>31 + 18 = 49</code> for “foo” and <code>25</code> for “bar”.</p>
+    <p>There are two articles, <strong>PMC1</strong> and <strong>PMC2</strong>. In their respective <code>results/word/frequencies/results.xml</code> files, it says what words are found how many times. <br>
+    <strong>PMC1</strong> has the word “foo” <code>31</code> times. <strong>PMC2</strong> has the word “foo” <code>18</code> times, and the word “bar” <code>25</code> times. The word “foo” occurs in <code>2</code> articles, which is the length of the array in the “foo” entry. <br>
+    The word “bar” occurs in <code>1</code> article, which is the length of the array in the “bar” entry. The total number of occurrences is <code>31 + 18 = 49</code> for “foo” and <code>25</code> for “bar”.</p>
 
 
 
-<h4 id="save-separately">Save separately</h4>
+    <h4 id="save-separately">Save separately</h4>
 
-<p>Output is JSON, in one or multiple files, depending on the flag <code>-s, --save-separately</code>.</p>
-
-
-
-<h5 id="one-file">One file</h5>
-
-<p>Without <code>-s</code>.</p>
+    <p>Output is JSON, in one or multiple files, depending on the flag <code>-s, --save-separately</code>.</p>
 
 
 
-<pre class="prettyprint"><code class="language-javascript hljs "><span class="hljs-comment">// data.json</span>
+    <h5 id="one-file">One file</h5>
+
+    <p>Without <code>-s</code>.</p>
+
+
+
+    <pre class="prettyprint"><code class="language-javascript hljs "><span class="hljs-comment">// data.json</span>
 
 {
 
@@ -192,13 +221,13 @@ The word “bar” occurs in <code>1</code> article, which is the length of the 
 
 
 
-<h5 id="multiple-files">Multiple files</h5>
+    <h5 id="multiple-files">Multiple files</h5>
 
-<p>With <code>-s</code>.</p>
+    <p>With <code>-s</code>.</p>
 
 
 
-<pre class="prettyprint"><code class="language-javascript hljs "><span class="hljs-comment">// articles.json</span>
+    <pre class="prettyprint"><code class="language-javascript hljs "><span class="hljs-comment">// articles.json</span>
 
 {
   ...
@@ -265,24 +294,24 @@ The word “bar” occurs in <code>1</code> article, which is the length of the 
 
 
 
-<h3 id="ctj-rdf">ctj rdf</h3>
+    <h3 id="ctj-rdf">ctj rdf</h3>
 
-<p>Convert CProjects to rdf. Currently only Turtle support.</p>
+    <p>Convert CProjects to rdf. Currently only Turtle support.</p>
 
-<pre><code>Usage: ctj rdf [options]
+    <pre><code>Usage: ctj rdf [options]
 
 
-Options:
+    Options:
 
-  -V, --version         output the version number
-  -p, --project &lt;path&gt;  CProject folder
-  -o, --output &lt;path&gt;   Output directory (directory will be created if it doesn't exist, defaults to CProject folder
-  -h, --help            output usage information
-</code></pre>
+      -V, --version         output the version number
+      -p, --project &lt;path&gt;  CProject folder
+      -o, --output &lt;path&gt;   Output directory (directory will be created if it doesn't exist, defaults to CProject folder
+      -h, --help            output usage information
+    </code></pre>
 
-<p>Outputs triples like this:</p>
+    <p>Outputs triples like this:</p>
 
-<pre><code>@prefix ...
+    <pre><code>@prefix ...
 
 pmcid:PMC1 cito:discusses
   :MD5_HASH_1 ,
@@ -296,4 +325,6 @@ pmcid:PMC2 cito:discusses
 
 type:binomial rdfs:label "Species" .
 type:genus    rdfs:label "Genus" .
-</code></pre>
+    </code></pre>
+  </body>
+</html>
