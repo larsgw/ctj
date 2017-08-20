@@ -89,7 +89,7 @@ directories.forEach(directory => {
     'cito:discusses': []
   }
 
-  const ami = getAmiResults(project, directory, []).data
+  const ami = getAmiResults(directory, []).data
 
   for (let type in ami) {
     if (!useTypes.hasOwnProperty(type)) {

@@ -70,8 +70,8 @@ const progressBar = makeBar({total: directories.length})
 
 const outputData = {}
 outputData.articles = Object.assign(...directories.map(directory => {
-  const metadata = JSON.parse(fs.readFileSync(path.join(project, directory, metadataFilename), 'utf8'))
-  const {data: amiResults, groupedData} = getAmiResults(project, directory, groupResults)
+  const metadata = JSON.parse(fs.readFileSync(path.join(directory, metadataFilename), 'utf8'))
+  const {data: amiResults, groupedData} = getAmiResults(directory, groupResults)
 
   for (let group in groupedData) {
     if (!outputData.hasOwnProperty(group)) {

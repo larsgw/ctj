@@ -8,8 +8,8 @@ const getXmlFile = (fileName, encoding = 'utf8') => new XmlDocument(fs.readFileS
 const isNotTextNode = node => !node.text
 const getLabel = ({match, word, exact}) => match || word || exact
 
-const getResultFiles = function (project, directory) {
-  const sequenceFile = path.join(project, directory, sequencesFilename)
+const getResultFiles = function (directory) {
+  const sequenceFile = path.join(directory, sequencesFilename)
 
   if (!fs.existsSync(sequenceFile)) {
     return []
@@ -18,11 +18,8 @@ const getResultFiles = function (project, directory) {
   return getXmlFile(sequenceFile).children.filter(isNotTextNode).map(({attr: {name}}) => name)
 }
 
-const getAmiResults = function (project, directory, groupResults) {
-  const cwd = process.cwd()
-  process.chdir('..')
-
-  const files = getResultFiles(project, directory)
+const getAmiResults = function (directory, groupResults) {
+  const files = getResultFiles(directory)
   const data = {}
   const groupedData = {}
 
@@ -75,7 +72,6 @@ const getAmiResults = function (project, directory, groupResults) {
     }
   })
 
-  process.chdir(cwd)
   return {data, groupedData}
 }
 
