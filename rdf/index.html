@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CProjects to RDF - ctj</title>
+    <meta charset="utf8" />
+    <style>
+body {
+  margin: 0 auto;
+  max-width: 700px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+body * {
+  overflow-x: auto;
+}
+body li {
+  overflow-x: initial;
+}
+code {
+  background-color: #f8f8f8;
+  line-height: 1.5em;
+  padding: 0 5px;
+}
+table {
+  border-collapse: collapse;
+}
+thead {
+  border-bottom: 3px solid;
+}
+th, td {
+  border: 1px solid;
+  padding: 5px;
+}
+th:first-child , td:first-child {
+  border-left: none;
+}
+th:last-child, td:last-child {
+  border-right: none;
+}
+tr:first-child td, tr:first-child th {
+  border-top: none;
+}
+tr:last-child td, tr:last-child th {
+  border-bottom: none;
+}
+    </style>
+  </head>
+  <body><h1 id="ctj-rdf">ctj rdf</h1>
+
+<p>I <a href="https://larsgw.blogspot.nl/2016/07/research-project-proposals.html">applied</a> to the <a href="http://contentmine.org/fellows">ContentMine fellowships</a> to extract facts and other info from papers about conifers, and visualise them. This program accomplishes that, and possibly more.</p>
+
+<p><strong>Table of contents</strong></p>
+
+<p><div class="toc">
+<ul>
+<li><a href="#ctj-rdf">ctj rdf</a><ul>
+<li><a href="#general">General</a></li>
+<li><a href="#case-specific">Case-specific</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+<h2 id="general">General</h2>
+
+<p><a href="https://larsgw.github.io/ctj">ctj</a> has been around for <a href="https://larsgw.blogspot.nl/2016/08/cproject-to-json.html">longer</a>, and started as a way to learn my way into the <a href="http://contentmine.org">ContentMine</a> pipeline of tools, but turned out to uncover a lot of possibilities in further processing the output of this pipeline (<a href="https://larsgw.blogspot.nl/2016/09/weekly-reports-7-interactive.html">1</a>, <a href="https://larsgw.blogspot.nl/2016/10/weekly-report-10-visualising-facts-and.html">2</a>).</p>
+
+<p>The recent addition of <a href="https://larsgw.github.io/ctj#ctj-rdf">ctj rdf</a> expands on this. While there is a lot of data loss between the ContentMine output and the resulting rdf, the possibilities certainly are no less. This is mainly because of <a href="https://www.w3.org/TR/sparql11-update/">SPARQL</a>, which makes it possible to integrate in other databases, such as <a href="https://wikidata.org">Wikidata</a>, without many changes in <em>ctj rdf</em> itself.</p>
+
+<p>Here’s a simple demonstration of how this works:</p>
+
+<ol>
+<li>We download 100 articles about <code>aardvark</code> (classic ContentMine example)</li>
+<li>We run the ContentMine pipeline (<em>norma</em>, <em>ami2-species</em>, <em>ami2-sequence</em>)</li>
+<li>We run <em>ctj rdf</em></li>
+</ol>
+
+<p>This generates <code>data.ttl</code>, which holds the following information:</p>
+
+<ul>
+<li>Common identifier for each article (currently PMC)</li>
+<li>Matched terms from each article (which terms/names are found in which article)</li>
+<li>Type of each term (genus, binomial, etc.)</li>
+<li>Label of each term (matched text)</li>
+</ul>
+
+<p>Note that there are no links to Wikidata <em>whatsoever</em>. When we list, for instance, how often each term is mentioned in an article (in the dataset), we only have string values, a <a href="https://identifiers.org">identifiers.org</a> URI and some custom namespace URIs.</p>
+
+<p>However, in this format, we can easily use the information in these papers in conjunction with the enormous amount of data in Wikidata with <a href="https://www.w3.org/TR/sparql11-federated-query/">Federated Queries</a>.</p>
+
+<p>To accomplish this we first link the identifier in our dataset to the ones in Wikidata; then we link the matched text of the term to the <a href="https://www.wikidata.org/wiki/Property:P225">taxon name</a> in species in Wikidata. This alone already gives us a set of semantic triples where both values in <em>every triple</em> are linked to values in the extensive community-driven database that is Wikidata.</p>
+
+<p>Now say we want to list the Swedish name of each of those species. Well, we can, because that info probably exists on Wikidata (see stats below). And if we can’t find something, remember that each of those Wikidata values are also <a href="https://www.wikidata.org/wiki/Q46212#identifiers">linked to numerous other databases</a>.</p>
+
+<p>Again, this is without having to change <em>anything</em> in the rdf output  (to be fair, I forgot to list an article identifier in the first version of the program, but that could/should have been anticipated). Not having to add this data to the output has the added benefit of <strong>not having to make and maintain local dictionaries and lists of this data.</strong></p>
+
+<p>Some stats:</p>
+
+<ul>
+<li>Number of articles: 100 (for reference)</li>
+<li>Number of ‘term found in article’ statements: 1964</li>
+<li>Number of those statements that map to Wikidata: 1293 (65.3% of total)</li>
+<li>Number of mapped statements with Swedish labels: 1056 (81.7% of mapped statements, 53.8% of total)</li>
+<li>Average number of statements per article: 19.64, 12.93 mapped</li>
+</ul>
+
+<p>Note that not all terms are actually valid. A lot of <code>genus</code> matches are actually just capitalised words, and a lot of common species names are abbreviated, e.g. to <code>E. coli</code>, making it impossible to unambiguously map to Wikidata or any other database. This explains the difference between found ‘terms’ and mapped terms.</p>
+
+<h2 id="case-specific">Case-specific</h2>
+
+<p>Here’s a more detailed example. We are using my dataset available at <a href="https://doi.org/10.5281/zenodo.845935">10.5281/zenodo.845935</a>. It was generated from 1000 articles that mention ‘Pinus’ somewhere. This one has 15326 statements, whereof 8875 (57.9%) can be mapped, taking ~50 seconds. Now, for example, we can list the top 100 most mentioned species. First 20:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Species</th>
+  <th>Hits</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Pinus sylvestris</td>
+  <td>248</td>
+</tr>
+<tr>
+  <td>Picea abies</td>
+  <td>177</td>
+</tr>
+<tr>
+  <td>Pinus taeda</td>
+  <td>138</td>
+</tr>
+<tr>
+  <td>Pinus pinaster</td>
+  <td>120</td>
+</tr>
+<tr>
+  <td>Pinus contorta</td>
+  <td>96</td>
+</tr>
+<tr>
+  <td>Arabidopsis thaliana</td>
+  <td>91</td>
+</tr>
+<tr>
+  <td>Picea glauca</td>
+  <td>77</td>
+</tr>
+<tr>
+  <td>Pinus radiata</td>
+  <td>77</td>
+</tr>
+<tr>
+  <td>Pinus massoniana</td>
+  <td>72</td>
+</tr>
+<tr>
+  <td>Pseudotsuga menziesii</td>
+  <td>65</td>
+</tr>
+<tr>
+  <td>Oryza sativa</td>
+  <td>56</td>
+</tr>
+<tr>
+  <td>Pinus halepensis</td>
+  <td>56</td>
+</tr>
+<tr>
+  <td>Pinus ponderosa</td>
+  <td>55</td>
+</tr>
+<tr>
+  <td>Pinus banksiana</td>
+  <td>53</td>
+</tr>
+<tr>
+  <td>Pinus koraiensis</td>
+  <td>53</td>
+</tr>
+<tr>
+  <td>Picea mariana</td>
+  <td>52</td>
+</tr>
+<tr>
+  <td>Pinus nigra</td>
+  <td>51</td>
+</tr>
+<tr>
+  <td>Pinus strobus</td>
+  <td>46</td>
+</tr>
+<tr>
+  <td>Quercus robur</td>
+  <td>45</td>
+</tr>
+<tr>
+  <td>Fagus sylvatica</td>
+  <td>45</td>
+</tr>
+<tr>
+  <td>…</td>
+  <td>…</td>
+</tr>
+</tbody></table>
+
+
+<p>The top of the list isn’t surprising: mostly pines, other conifers, other trees, <em>Arabidopsis thaliana</em> which I’ve seen represented in pine literature before, and <em>Oryza sativa</em> (well, that’s a bit surprising actually, but I’m sure there’s a logical explanation).</p>
+
+<p>Note that only 248 of the 1000 articles mention the top Pinus species. This may be because the query getting the articles was quite broad. Also note that this doesn’t take into account how often an article mentions a species; a caveat of the current rdf output.</p>
+
+<p>Going of this list, we can then look what non-tree or even non-plant species are named most often in conjunction with a given species, or, in this case, a genus.</p>
+
+<p>More later.</p>
+  </body>
+</html>
