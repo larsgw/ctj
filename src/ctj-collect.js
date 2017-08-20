@@ -57,8 +57,10 @@ if (groupResults) {
   logger.info(`Also grouping AMI results of types: ${groupResults}`)
 }
 
+process.chdir(project)
+
 // TODO use CProject/sequencesfiles.xml
-const directories = fs.readdirSync(project).filter(directory => /PMC\d+/.test(directory))
+const directories = fs.readdirSync('.').filter(directory => /PMC\d+/.test(directory))
 // BEGIN test
 // .filter(dir => dir === 'PMC3841577')
 // let i = 0
@@ -110,12 +112,14 @@ const stringify = json => JSON.stringify(json, ...(minify ? [] : [null, 2]))
 
 logger.info('Saving output...')
 
+process.chdir(output)
+
 if (!saveSeparately) {
   // TODO output naming
-  fs.writeFileSync(path.join(output, 'data.json'), stringify(outputData))
+  fs.writeFileSync('data.json', stringify(outputData))
 } else {
   for (let dataIndex in outputData) {
-    fs.writeFileSync(path.join(output, `${dataIndex}.json`), stringify(outputData[dataIndex]))
+    fs.writeFileSync(`${dataIndex}.json`, stringify(outputData[dataIndex]))
   }
 }
 

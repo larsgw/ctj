@@ -65,17 +65,18 @@ const useTypes = {
 
 const maxChars = Math.max(...Object.keys(useTypes).map(a => a.length))
 
-const isUniqueHit = (thing, index, array) => array.findIndex(elm => getLabel(thing) === getLabel(elm)) === index
+const isUniqueHit = (thing, index, array) => index === array.findIndex(elm => getLabel(thing) === getLabel(elm))
 
 logger.info('CProject To JSON (ctj) config:')
 logger.info(`Input directory: ${project}`)
 logger.info(`Output directory: ${output}`)
 logger.info(`Output format: ${format}`)
 
-// TODO don't assume directory name is a PMCID
-const directories = fs.readdirSync(project).filter(directory => /PMC\d+/.test(directory))
+process.chdir(project)
 
-// TODO
+// TODO don't assume directory name is a PMCID
+const directories = fs.readdirSync('.').filter(directory => /PMC\d+/.test(directory))
+
 const parsingProgress = makeBar({total: directories.length})
 
 const rdfSubjects = {}
@@ -135,9 +136,12 @@ import(`./rdf/${format}`)
     buildRdf(rdfSubjects, prefixes, {stepCallback (item) { formattingProgress.tick({item}) }}))
   .then(rdf => {
     logger.info('Saving output...')
+    logger.debug(`RDF length: ${rdf.length}`)
+
+    process.chdir(output)
 
     // TODO output naming
-    fs.writeFileSync(path.join(output, `data.${extension}`), rdf)
+    fs.writeFileSync(`data.${extension}`, rdf)
 
     logger.info('Saving output succeeded!')
   })

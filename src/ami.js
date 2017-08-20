@@ -6,7 +6,6 @@ const sequencesFilename = 'sequencesfiles.xml'
 
 const getXmlFile = (fileName, encoding = 'utf8') => new XmlDocument(fs.readFileSync(fileName, encoding))
 const isNotTextNode = node => !node.text
-
 const getLabel = ({match, word, exact}) => match || word || exact
 
 const getResultFiles = function (project, directory) {
@@ -20,6 +19,9 @@ const getResultFiles = function (project, directory) {
 }
 
 const getAmiResults = function (project, directory, groupResults) {
+  const cwd = process.cwd()
+  process.chdir('..')
+
   const files = getResultFiles(project, directory)
   const data = {}
   const groupedData = {}
@@ -73,6 +75,7 @@ const getAmiResults = function (project, directory, groupResults) {
     }
   })
 
+  process.chdir(cwd)
   return {data, groupedData}
 }
 

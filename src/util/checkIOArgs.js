@@ -1,5 +1,8 @@
 import fs from 'fs'
+import path from 'path'
 import logger from 'winston'
+
+const cwd = process.cwd()
 
 export default function checkIOArgs ({project, output}) {
   if (!project) {
@@ -12,5 +15,8 @@ export default function checkIOArgs ({project, output}) {
     logger.info(`Creating output directory: ${output}`)
     fs.mkdirSync(output)
   }
+
+  project = path.resolve(cwd, project)
+  output = path.resolve(cwd, output)
   return {project, output}
 }
