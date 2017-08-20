@@ -25,6 +25,12 @@ program
           'Output directory ' +
           '(directory will be created if it doesn\'t exist, defaults to CProject folder')
 
+  .option('-f, --format <format>',
+          'Output format',
+          /^(turtle)$/i,
+
+          'turtle')
+
   .parse(process.argv)
 
 if (process.argv.length <= 2) {
@@ -32,6 +38,14 @@ if (process.argv.length <= 2) {
 }
 
 const logger = setupLogger(program)
+
+const {project, output} = checkIOArgs(program)
+const {format} = program
+
+const extensions = {
+  turtle: 'ttl'
+}
+const extension = extensions[format]
 
 const ns = 'https://larsgw.github.io/ctj/rdf/#/'
 const prefixes = {
@@ -51,20 +65,15 @@ const useTypes = {
 
 const maxChars = Math.max(...Object.keys(useTypes).map(a => a.length))
 
-const {project, output} = checkIOArgs(program)
-
 const isUniqueHit = (thing, index, array) => array.findIndex(elm => getLabel(thing) === getLabel(elm)) === index
 
 logger.info('CProject To JSON (ctj) config:')
 logger.info(`Input directory: ${project}`)
 logger.info(`Output directory: ${output}`)
+logger.info(`Output format: ${format}`)
 
 // TODO don't assume directory name is a PMCID
 const directories = fs.readdirSync(project).filter(directory => /PMC\d+/.test(directory))
-
-// TODO `import()`
-// TODO dynamic type
-const {buildRdf} = require('./rdf/turtle')
 
 // TODO
 const parsingProgress = makeBar({total: directories.length})
@@ -120,11 +129,15 @@ for (let hitHash in defineLater.hits) {
 logger.info('Directories parsed!')
 
 const formattingProgress = makeBar({msg: 'Formatting rdf item', total: Object.keys(rdfSubjects).length})
-const rdf = buildRdf(rdfSubjects, prefixes, {stepCallback (item) { formattingProgress.tick({item}) }})
 
-logger.info('Saving output...')
+import(`./rdf/${format}`)
+  .then(({buildRdf}) =>
+    buildRdf(rdfSubjects, prefixes, {stepCallback (item) { formattingProgress.tick({item}) }}))
+  .then(rdf => {
+    logger.info('Saving output...')
 
-// TODO output naming
-fs.writeFileSync(path.join(output, 'data.ttl'), rdf)
+    // TODO output naming
+    fs.writeFileSync(path.join(output, `data.${extension}`), rdf)
 
-logger.info('Saving output succeeded!')
+    logger.info('Saving output succeeded!')
+  })
