@@ -105,11 +105,11 @@ tr:last-child td, tr:last-child th {
 <li>Average number of statements per article: 19.64, 12.93 mapped</li>
 </ul>
 
-<p>Note that not all terms are actually valid. A lot of <code>genus</code> matches are actually just capitalised words, and a lot of common species names are abbreviated, e.g. to <code>E. coli</code>, making it impossible to unambiguously map to Wikidata or any other database. This explains the difference between found ‘terms’ and mapped terms.</p>
+<p>Note that not all terms are actually valid. A lot of <code>genus</code> matches are actually just capitalised words, and a lot of common species names are abbreviated, e.g. to <code>E. coli</code>, making it impossible to unambiguously map to Wikidata or any other database. This could explain the difference between found ‘terms’ and mapped terms.</p>
 
 <h2 id="case-specific">Case-specific</h2>
 
-<p>Here’s a more detailed example. We are using my dataset available at <a href="https://doi.org/10.5281/zenodo.845935">10.5281/zenodo.845935</a>. It was generated from 1000 articles that mention ‘Pinus’ somewhere. This one has 15326 statements, whereof 8875 (57.9%) can be mapped, taking ~50 seconds. Now, for example, we can list the top 100 most mentioned species. First 20:</p>
+<p>Here’s a more detailed example. We are using my dataset available at <a href="https://doi.org/10.5281/zenodo.845935">10.5281/zenodo.845935</a>. It was generated from 1000 articles that mention ‘Pinus’ somewhere. This one has 15326 statements, whereof 8875 (57.9%) can be mapped, taking ~50 seconds. Now, for example, we can list the top 100 most mentioned species. The top 20:</p>
 
 <table>
 <thead>
@@ -205,12 +205,224 @@ tr:last-child td, tr:last-child th {
 </tbody></table>
 
 
-<p>The top of the list isn’t surprising: mostly pines, other conifers, other trees, <em>Arabidopsis thaliana</em> which I’ve seen represented in pine literature before, and <em>Oryza sativa</em> (well, that’s a bit surprising actually, but I’m sure there’s a logical explanation).</p>
+<p>The top of the list isn’t surprising: mostly pines, other conifers, other trees, <em>Arabidopsis thaliana</em> which I’ve seen represented in pine literature before, and <em>Oryza sativa</em> or rice, which I haven’t seen before in this context.</p>
 
 <p>Note that only 248 of the 1000 articles mention the top Pinus species. This may be because the query getting the articles was quite broad. Also note that this doesn’t take into account how often an article mentions a species; a caveat of the current rdf output.</p>
 
-<p>Going of this list, we can then look what non-tree or even non-plant species are named most often in conjunction with a given species, or, in this case, a genus.</p>
+<p>Going of this list, we can then look what non-tree or even non-plant species are named most often in conjunction with a given species, or, in this case, a genus. Top 20:</p>
 
-<p>More later.</p>
+<table>
+<thead>
+<tr>
+  <th>Species 1</th>
+  <th>Species 2</th>
+  <th>Co-occurences</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Picea abies</td>
+  <td>Pinus sylvestris</td>
+  <td>98</td>
+</tr>
+<tr>
+  <td>Picea abies</td>
+  <td>Pinus taeda</td>
+  <td>56</td>
+</tr>
+<tr>
+  <td>Arabidopsis thaliana</td>
+  <td>Pinus taeda</td>
+  <td>47</td>
+</tr>
+<tr>
+  <td>Picea glauca</td>
+  <td>Pinus taeda</td>
+  <td>43</td>
+</tr>
+<tr>
+  <td>Arabidopsis thaliana</td>
+  <td>Oryza sativa</td>
+  <td>43</td>
+</tr>
+<tr>
+  <td>Pinus pinaster</td>
+  <td>Pinus taeda</td>
+  <td>41</td>
+</tr>
+<tr>
+  <td>Pinus pinaster</td>
+  <td>Pinus sylvestris</td>
+  <td>41</td>
+</tr>
+<tr>
+  <td>Picea abies</td>
+  <td>Picea glauca</td>
+  <td>41</td>
+</tr>
+<tr>
+  <td>Arabidopsis thaliana</td>
+  <td>Picea abies</td>
+  <td>37</td>
+</tr>
+<tr>
+  <td>Pinus contorta</td>
+  <td>Pinus sylvestris</td>
+  <td>36</td>
+</tr>
+<tr>
+  <td>Betula pendula</td>
+  <td>Pinus sylvestris</td>
+  <td>36</td>
+</tr>
+<tr>
+  <td>Pinus sylvestris</td>
+  <td>Pinus taeda</td>
+  <td>36</td>
+</tr>
+<tr>
+  <td>Pinus nigra</td>
+  <td>Pinus sylvestris</td>
+  <td>35</td>
+</tr>
+<tr>
+  <td>Pinus contorta</td>
+  <td>Pseudotsuga menziesii</td>
+  <td>32</td>
+</tr>
+<tr>
+  <td>Picea abies</td>
+  <td>Pinus contorta</td>
+  <td>31</td>
+</tr>
+<tr>
+  <td>Picea abies</td>
+  <td>Pinus pinaster</td>
+  <td>30</td>
+</tr>
+<tr>
+  <td>Arabidopsis thaliana</td>
+  <td>Physcomitrella patens</td>
+  <td>30</td>
+</tr>
+<tr>
+  <td>Oryza sativa</td>
+  <td>Pinus taeda</td>
+  <td>29</td>
+</tr>
+<tr>
+  <td>Pinus sylvestris</td>
+  <td>Quercus robur</td>
+  <td>29</td>
+</tr>
+<tr>
+  <td>Picea abies</td>
+  <td>Picea sitchensis</td>
+  <td>28</td>
+</tr>
+<tr>
+  <td>…</td>
+  <td>…</td>
+  <td>…</td>
+</tr>
+</tbody></table>
+
+
+<p>Interesting to see that rice is mostly mentioned with <em>Arabidopsis</em>. Let’s explore that further. Below are species named in conjunction with <em>Oryza sativa</em>.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Species</th>
+  <th>Co-occurrences</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>Arabidopsis thaliana</td>
+  <td>43</td>
+</tr>
+<tr>
+  <td>Pinus taeda</td>
+  <td>29</td>
+</tr>
+<tr>
+  <td>Picea abies</td>
+  <td>24</td>
+</tr>
+<tr>
+  <td>Physcomitrella patens</td>
+  <td>23</td>
+</tr>
+<tr>
+  <td>Populus trichocarpa</td>
+  <td>21</td>
+</tr>
+<tr>
+  <td>Glycine max</td>
+  <td>20</td>
+</tr>
+<tr>
+  <td>Vitis vinifera</td>
+  <td>17</td>
+</tr>
+<tr>
+  <td>Picea glauca</td>
+  <td>17</td>
+</tr>
+<tr>
+  <td>Pinus pinaster</td>
+  <td>16</td>
+</tr>
+<tr>
+  <td>Selaginella moellendorffii</td>
+  <td>15</td>
+</tr>
+<tr>
+  <td>Pinus sylvestris</td>
+  <td>13</td>
+</tr>
+<tr>
+  <td>Triticum aestivum</td>
+  <td>12</td>
+</tr>
+<tr>
+  <td>Pinus contorta</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Picea sitchensis</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Ginkgo biloba</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Pinus radiata</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Ricinus communis</td>
+  <td>9</td>
+</tr>
+<tr>
+  <td>Amborella trichopoda</td>
+  <td>9</td>
+</tr>
+<tr>
+  <td>Medicago truncatula</td>
+  <td>9</td>
+</tr>
+<tr>
+  <td>Cucumis sativus</td>
+  <td>8</td>
+</tr>
+<tr>
+  <td>…</td>
+  <td>…</td>
+</tr>
+</tbody></table>
+
+
+<p>So attention seems divided between trees and more agriculture-related plants. More to explore for later.</p>
   </body>
 </html>
